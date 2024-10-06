@@ -1,0 +1,138 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  transition: height 0.3s linear, transform 0.3s linear;
+  fill: #ffffff;
+
+  &.scrolled {
+    height: 8rem;
+    border-bottom: 1px solid var(--border-card);
+    backdrop-filter: blur(5px);
+  }
+
+  &.notScrolled {
+    height: 15rem;
+    border-bottom: none;
+    backdrop-filter: blur(0);
+  }
+
+  &.hidden {
+    transform: translateY(-15rem);
+  }
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  & > img {
+    width: 15rem;
+
+    @media screen and (max-width: 450px) {
+      width: 10rem;
+    }
+  }
+}
+
+.headerNav {
+  flex: 1 1 auto;
+  max-width: 500px;
+
+  @media screen and (max-width: 768px) {
+    max-width: 500px;
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: unset;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 110vh;
+    background-color: var(--secondary);
+    color: var(--white);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+
+    &.active {
+      transform: translateX(0);
+    }
+
+    & ul {
+      margin-top: 100px;
+      flex-direction: column;
+      gap: 3rem;
+      align-items: center;
+      padding: 10rem 0 0 0;
+      width: 100vw;
+
+      & a::after {
+        position: static !important;
+      }
+    }
+  }
+
+  & button {
+    display: none;
+
+    @media screen and (max-width: 768px) {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: var(--white);
+
+      & svg {
+        width: 20px;
+        height: 20px;
+        transition: color 0.2s ease;
+      }
+
+      & svg:hover {
+        color: var(--text-hover);
+      }
+    }
+  }
+
+  & ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex: 1 1 auto;
+
+    & a {
+      position: relative;
+      font-weight: 500;
+      font-size: 1.8rem;
+      white-space: nowrap;
+    }
+
+    & a.isActive {
+      font-weight: 600;
+    }
+
+    & a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--accent);
+      transition: all 0.2s linear;
+    }
+
+    & a:hover::after {
+      width: 100%;
+    }
+  }
+}
