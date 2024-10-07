@@ -1,0 +1,27 @@
+.tiles {
+  --full: linear-gradient(90deg, var(--full-color-square) 0%, rgba(255, 255, 255, 0) 90%);
+  --partial: linear-gradient(90deg, var(--light-color-square) 0%, rgba(255, 255, 255, 0) 50%);
+  --top-to-bottom: linear-gradient(
+    180deg,
+    var(--light-color-square) 0%,
+    rgba(255, 255, 255, 0) 40%
+  );
+  position: absolute;
+  top: var(--top);
+  right: var(--right);
+  width: var(--width);
+  height: var(--height);
+  border-radius: 3rem;
+
+  &.full {
+    background: var(--full);
+  }
+
+  &.partial {
+    background: var(--partial);
+  }
+
+  &.top-to-bottom {
+    background: var(--top-to-bottom);
+  }
+}
