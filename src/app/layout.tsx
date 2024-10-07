@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 
-const poppins = Poppins({ preload: true, weight: ["300", "400", "500", "600"], subsets: ['latin'], adjustFontFallback: true, display: "swap", fallback: ["sans-serif"] });
+const poppins = Poppins({ preload: true, weight: ["300", "400", "500", "600"], subsets: ['latin'], adjustFontFallback: true, display: "swap", fallback: ["sans-serif"], variable: '--font-poppins' });
 
 export const metadata: Metadata = {
   title: "Create Next App",
