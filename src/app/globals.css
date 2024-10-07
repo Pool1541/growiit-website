@@ -14,7 +14,7 @@
   --text-contrast-transparent: #9ca3af; 
   --text-h-contrast: #111827;
   --accent: #ca78ff;
-  --full-color-square: rgba(173, 73, 240, 0.376);
+  --full-color-square: rgba(205, 131, 255, 30%);
   --light-color-square: rgba(202, 120, 255, 0.5763480392156863);
   --shadow-dark:29px 38px 34px -15px rgba(0, 0, 0, 0.28);
   --shadow-button: 5px 5px 7px 2px rgba(0, 0, 0, 0.13);
@@ -53,7 +53,6 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  color: var(--text-h-contrast); /* Remove later */
 }
 
 h1 {
@@ -103,6 +102,7 @@ a, button {
 a, button, div, span {
   font-size: var(--paragraph-size);
   line-height: 1.4;
+  font-family: var(--font-poppins);
 }
 
 ul {
