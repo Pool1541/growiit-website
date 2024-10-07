@@ -7,11 +7,12 @@ interface Props extends React.HTMLAttributes<HTMLElement> {
 }
 
 export default function Wrapper({ children, as, small, ...props }: Props) {
+  const { className = '', ...rest } = props;
   const Component = as || 'div';
   const smallClass = small ? styles.small : '' ;
 
   return (
-    <Component {...props} className={`${styles.wrapper} ${smallClass}`} >
+    <Component {...rest} className={`${styles.wrapper} ${smallClass} ${className}`} >
       { children }
     </Component>
   )
