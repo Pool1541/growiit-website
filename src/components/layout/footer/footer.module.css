@@ -1,0 +1,40 @@
+.footer {
+  padding: 5rem 0;
+  background-color: var(--white);
+  color: var(--text-contrast-transparent);
+}
+
+.links {
+  & ul {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    & li {
+      padding: 1rem 0;
+      transition: color 0.2s linear;
+    }
+
+    & li:hover {
+      color: var(--text-contrast);
+    }
+  }
+
+  &.icons {
+    & ul {
+      gap: 3.5rem;
+  
+      & svg {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+}
+
+.copyright {
+  margin-top: 1rem;
+  text-align: center;
+}
