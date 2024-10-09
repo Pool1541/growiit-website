@@ -40,20 +40,22 @@
     background-color: inherit;
     font-size: var(--paragraph-responsive);
 
-    &.error {
-      outline: 1px solid var(--error);
-
-      &:focus {
-        outline: 2px solid var(--error);
-      }
-    }
-
     &:focus {
       outline: 2px solid var(--secondary);
     }
 
     &::placeholder {
       color: var(--text-contrast-transparent);
+    }
+  }
+
+  &.error {
+    & input, & textArea {
+      outline: 1px solid var(--error);
+
+      &:focus {
+        outline: 2px solid var(--error);
+      }
     }
   }
 
@@ -88,11 +90,6 @@
     right: 0;
     bottom: -2.6rem;
     color: var(--error);
-
-    &.left {
-      right: auto;
-      left: 0;
-    }
   }
 }
 
