@@ -95,7 +95,7 @@ export default function Contact() {
                       onChange={(token) => handleChange(token, setFieldValue)}
                       hl='es'
                     />
-                    <ErrorMessage component='span' name='g-recaptcha-response' className='left' />
+                      <ErrorMessage component='span' name='g-recaptcha-response' />
                   </div>
                 </InputGroup>
                 <InputGroup>
