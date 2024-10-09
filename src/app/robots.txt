@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://growiit.com/sitemap.xml
