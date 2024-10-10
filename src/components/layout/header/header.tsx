@@ -4,6 +4,7 @@ import { useLockedBody, useScroll } from '@/hooks';
 import { BurgerButton } from '@/components/ui/burger-button';
 import { Wrapper } from '../wrapper';
 import styles from './header.module.css'
+import { Growiit } from '@/components/icons';
 
 export default function Header() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -27,7 +28,7 @@ export default function Header() {
       <Wrapper style={{ height: '100%'}}>
         <div className={styles.container}>
           <div className={styles.logo}>
-            <span>LOGO</span>
+            <Growiit />
           </div>
           <nav className={`${styles.headerNav} ${isActive}`}>
           <ul>
