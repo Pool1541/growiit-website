@@ -8,7 +8,10 @@ import "./globals.css";
 const poppins = Poppins({ preload: true, weight: ["300", "400", "500", "600"], subsets: ['latin'], adjustFontFallback: true, display: "swap", fallback: ["sans-serif"], variable: '--font-poppins' });
 
 export const metadata: Metadata = {
-  title: "Diseño y desarrollo de páginas web a medida | Growiit",
+  title: {
+    template: "%s | Growiit",
+    default: "Diseño y desarrollo de páginas web a medida | Growiit"
+  },
   description: "Agencia de Diseño Web especializada en crear páginas web a medida, optimizadas para SEO, UX/UI y conversión, enfocadas en potenciar tu negocio online.",
   keywords: "disenos web, diseño de paginas web, diseño de pàginas web, diseño ux ui, diseño web, diseños web, agencia de diseño, agencia de diseño web, creacion de paginas web, diseño de web, diseño pagina web, sitios web profesionales, diseño web pequeñas empresas, paginas web corporativas, paginas web para inmobiliarias, paginas web para restaurantes, paginas web para abogados",
   robots: "follow, index",

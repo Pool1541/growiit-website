@@ -1,6 +1,12 @@
+import { Metadata } from "next";
 import Link from "next/link";
 import { Wrapper } from "@/components/layout/wrapper";
 import styles from './not-found.module.css';
+
+
+export const metadata: Metadata = {
+  title: 'Página no encontrada',
+}
 
 
 export default function Page() {
@@ -16,6 +22,5 @@ export default function Page() {
         </div>
         </Wrapper>
       </div>
-
   )
 }
