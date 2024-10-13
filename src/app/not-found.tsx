@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-      <div className={styles['not-found']}>
+      <main className={styles['not-found']}>
         <Wrapper>
         <div className={styles.container}>
           <h1>404</h1>
@@ -21,6 +21,6 @@ export default function Page() {
           <span>Volver al inicio</span></Link>
         </div>
         </Wrapper>
-      </div>
+      </main>
   )
 }
