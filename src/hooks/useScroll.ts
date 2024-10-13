@@ -40,6 +40,8 @@ export default function useScroll(ref: React.RefObject<HTMLElement>) {
         });
       }
     };
+    
+    onScroll();
 
     window.addEventListener('scroll', onScroll);
     return () => window.removeEventListener('scroll', onScroll); // Limpia el listener cuando el componente se desmonta
