@@ -9,7 +9,7 @@ export default function BurgerButton({ isActive, handleShowMenu }: Props) {
   const activeClass = isActive ? styles.active : '';
   
   return (
-    <button className={`${styles['burguer-button']} ${activeClass}`} onClick={handleShowMenu}>
+    <button className={`${styles['burguer-button']} ${activeClass}`} onClick={handleShowMenu} title='Abrir menú'>
       <div className='burguer-line'></div>
       <div className='burguer-line'></div>
       <div className='burguer-line'></div>
