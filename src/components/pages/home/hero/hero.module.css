@@ -22,6 +22,10 @@
     flex-direction: column;
     justify-content: center;
 
+    & a {
+      align-self: flex-start;
+    }
+
     @media screen and (max-width: 450px) {
       width: 100%;
       margin: auto;
