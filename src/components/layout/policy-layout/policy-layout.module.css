@@ -1,0 +1,49 @@
+
+.policy-page {
+  margin: 0;
+  background-color: var(--primary);
+}
+
+.container {
+  min-height: calc(100dvh - 221.17px);
+  padding-top: 15rem;
+  padding-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+
+  & article:not(:first-child) {
+    margin-top: 3rem;
+  }
+
+  & ul {
+    list-style: disc;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2.8rem;
+
+    & li {
+      margin-top: 0.5rem;
+    }
+  }
+
+  & h1 {
+    font-size: clamp(3rem, 5vw, 6rem);
+  }
+
+  & h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+  }
+
+  & p {
+    margin-top: 1rem;
+    font-size: var(--paragraph-responsive);
+  }
+
+  & a {
+    text-decoration: underline;
+  }
+
+}
