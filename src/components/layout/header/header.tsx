@@ -1,12 +1,16 @@
 'use client';
 import { useRef, useState } from 'react';
+import { usePathname } from 'next/navigation'
+import Link from 'next/link';
 import { useLockedBody, useScroll } from '@/hooks';
-import { BurgerButton } from '@/components/ui/burger-button';
+import { BurgerButton } from '@/components/ui';
 import { Wrapper } from '../wrapper';
-import styles from './header.module.css'
 import { Growiit } from '@/components/icons';
+import styles from './header.module.css'
+
 
 export default function Header() {
+  const pathname = usePathname();
   const [toggleMenu, setToggleMenu] = useState(false);
   const ref = useRef<HTMLElement>(null);
   const { scroll } = useScroll(ref);
@@ -28,32 +32,32 @@ export default function Header() {
       <Wrapper style={{ height: '100%'}}>
         <div className={styles.container}>
           <div className={styles.logo}>
-            <Growiit />
+            <Link href={'/'} scroll={pathname !== '/'} title='Logo de Growiit'><Growiit /></Link>
           </div>
           <nav className={`${styles.headerNav} ${isActive}`}>
           <ul>
               <li>
-                <a href='#' title='Ir a la sección de Inicio' onClick={hiddenMenu}>
+                <Link href='/#' title='Ir a la sección de Inicio' onClick={hiddenMenu}>
                   Inicio
-                </a>
+                </Link>
               </li>
               <li>
-                <a href='#about' title='Ir a la sección Sobre nosotros' onClick={hiddenMenu}>
+                <Link href='/#about' title='Ir a la sección Sobre nosotros' onClick={hiddenMenu}>
                   Sobre nosotros
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href='#services'
+                <Link
+                  href='/#services'
                   title='Ir a la sección de Planes y servicios'
                   onClick={hiddenMenu}>
                   Planes y servicios
-                </a>
+                </Link>
               </li>
               <li>
-                <a href='#contact' title='Ir a la sección de Contacto' onClick={hiddenMenu}>
+                <Link href='/#contact' title='Ir a la sección de Contacto' onClick={hiddenMenu}>
                   Contacto
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>

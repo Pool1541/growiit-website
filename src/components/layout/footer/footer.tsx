@@ -1,6 +1,7 @@
 import { FacebookIcon, InstagramIcon, WhatsappIcon } from '@/components/icons';
 import { Wrapper } from '../wrapper';
 import styles from './footer.module.css';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -9,55 +10,50 @@ export default function Footer() {
         <nav className={styles.links}>
           <ul>
             <li>
-              <a href='#' title='Ir a la sección de inicio'>
-                Inicio
-              </a>
+              <Link href='/terms-and-conditions' title='Ir a la sección de Términos y condiciones'>
+                Términos y condiciones
+              </Link>
             </li>
             <li>
-              <a href='#about' title='Ir a la sección Sobre nosotros'>
-                Sobre nosotros
-              </a>
+              <Link href='/terms-of-service' title='Ir a la sección de Términos de servicio'>
+                Términos de servicio
+              </Link>
             </li>
             <li>
-              <a href='#services' title='Ir a la sección de Planes y servicios'>
-                Planes y servicios
-              </a>
-            </li>
-            <li>
-              <a href='#contact' title='Ir a la sección de Contacto'>
-                Contacto
-              </a>
+              <Link href='/privacy-policy' title='Ir a la sección de Política de privacidad'>
+                Política de privacidad
+              </Link>
             </li>
           </ul>
         </nav>
         <nav className={`${styles.links} ${styles.icons}`}>
           <ul>
             <li>
-              <a
+              <Link
                 href='https://api.whatsapp.com/send?phone=573115040128'
                 title='Escríbenos en Whatsapp'
                 rel='noopener noreferrer'
                 target='_blank'>
                 <WhatsappIcon />
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href='https://www.facebook.com/profile.php?id=61565041050719'
                 title='Síguenos en Facebook'
                 rel='noopener noreferrer'
                 target='_blank'>
                 <FacebookIcon />
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href='https://www.instagram.com/growiit_'
                 title='Síguenos en Instagram'
                 rel='noopener noreferrer'
                 target='_blank'>
                 <InstagramIcon />
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
