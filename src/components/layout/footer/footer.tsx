@@ -10,17 +10,17 @@ export default function Footer() {
         <nav className={styles.links}>
           <ul>
             <li>
-              <Link href='/terms-and-conditions' title='Ir a la sección de Términos y condiciones'>
+              <Link href='/terminos-y-condiciones' title='Ir a la sección de Términos y condiciones'>
                 Términos y condiciones
               </Link>
             </li>
             <li>
-              <Link href='/terms-of-service' title='Ir a la sección de Términos de servicio'>
+              <Link href='/terminos-del-servicio' title='Ir a la sección de Términos de servicio'>
                 Términos de servicio
               </Link>
             </li>
             <li>
-              <Link href='/privacy-policy' title='Ir a la sección de Política de privacidad'>
+              <Link href='/politica-de-privacidad' title='Ir a la sección de Política de privacidad'>
                 Política de privacidad
               </Link>
             </li>
