@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import styles from '@/components/layout/header/header.module.css';
 
-export default function useScroll(ref: React.RefObject<HTMLElement>) {
+export default function useScroll(ref: React.RefObject<HTMLElement | null>) {
   const [scroll, setScroll] = useState(0);
   const scrollRef = useRef(scroll); // Ref para mantener el valor del scroll sin renderizar el componente
 
