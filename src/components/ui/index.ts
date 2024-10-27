@@ -4,3 +4,6 @@ export * from './image-tiles';
 export * from './input-group';
 export * from './tiles';
 export * from './whatsapp-button';
+export * from './blog-card';
+export * from './tag';
+export * from './metadata-label';
