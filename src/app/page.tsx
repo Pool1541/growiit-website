@@ -1,4 +1,4 @@
-import { About, Contact, Hero, Services } from "@/components/pages/home";
+import { About, Contact, Hero, Services, Blog } from "@/components/pages/home";
 import { WhatsappButton } from "@/components/ui/whatsapp-button";
 
 export default function Home() {
@@ -7,6 +7,7 @@ export default function Home() {
       <Hero />
       <About />
       <Services/>
+      <Blog />
       <Contact />
       <WhatsappButton />
     </main>
