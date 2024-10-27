@@ -53,14 +53,14 @@ export default function Services() {
   return (
     <section id='services' className={`${styles.services} landing-section`} data-header-color='black'>
       <Wrapper>
-        <header className={styles.header}>
+        <div className={styles.header}>
           <h2>Nuestros planes</h2>
           <p>
             Ofrecemos una variedad de planes adaptables a las necesidades específicas de tu negocio.
             Desde pequeñas páginas web hasta soluciones complejas, nuestros planes están diseñados
             para ayudarte a alcanzar tus objetivos digitales de manera efectiva y escalable.
           </p>
-        </header>
+        </div>
         <div className={styles.grid}>
           {services.map((service) => (
               <ServiceCard key={service.title} important={service.important} service={service} />
