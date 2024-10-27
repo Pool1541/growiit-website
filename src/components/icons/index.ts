@@ -3,3 +3,6 @@ export { default as WhatsappIcon } from './whatsapp.icon';
 export { default as FacebookIcon } from './facebook.icon';
 export { default as InstagramIcon } from './instagram.icon';
 export { default as Growiit } from './growiit.icon';
+export { default as AvatarIcon} from './avatar.icon';
+export { default as CalendarIcon } from './calendar.icon';
+export { default as ChevronRightIcon } from './chevron-right.icon';
