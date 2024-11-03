@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
-import { Header } from "@/components/layout/header";
-import { Footer } from "@/components/layout/footer";
+import { Nunito, Poppins } from "next/font/google";
 import { GoogleAnalytics } from '@next/third-parties/google'
 import "./globals.css";
 
 const poppins = Poppins({ preload: true, weight: ["300", "400", "500", "600"], subsets: ['latin'], adjustFontFallback: true, display: "swap", fallback: ["sans-serif"], variable: '--font-poppins' });
+
+const nunito = Nunito({ preload: true, weight: ["600"], subsets: ['latin'], display: "swap", adjustFontFallback: true, variable: '--font-nunito', fallback: ["sans-serif"] });
 
 export const metadata: Metadata = {
   title: {
@@ -49,17 +49,15 @@ export const metadata: Metadata = {
   }
 };
 
-export default function RootLayout({
+export default function Layout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
-      <body className={`${poppins.className}`}>
-        <Header />
-        {children}
-        <Footer />
+    <html lang="es" className={`${poppins.variable} ${nunito.variable}`}>
+      <body>
+       {children}
       </body>
       <GoogleAnalytics gaId="G-PVRE45HLQ4"/>
     </html>

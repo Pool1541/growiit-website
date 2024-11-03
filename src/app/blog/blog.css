@@ -1,0 +1,3 @@
+.blog-background {
+  background: var(--custom-article-bg-color, #d8ecf7);
+}
