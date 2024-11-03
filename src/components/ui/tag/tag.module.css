@@ -1,6 +1,6 @@
 .tag {
   display: flex;
-  padding: 6px 10px;
+  padding: 0.6rem 1rem;
   justify-content: center;
   align-items: center;
   gap: 4px;
@@ -13,9 +13,20 @@
     color: var(--slate-700, #334155);
     text-align: center;
     font-family: Poppins;
-    font-size: 11px;
     font-style: normal;
     font-weight: 500;
     line-height: 6px;
+  }
+
+  &.small span {
+    font-size: 11px;
+  }
+  
+  &.medium {
+    padding: 0.8rem 1.2rem;
+    
+    & span {
+      font-size: 12px;
+    }
   }
 }

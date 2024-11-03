@@ -6,6 +6,7 @@ interface BlogArticleInterface {
   author: string;
   date: string;
   tags: TagInterface[];
+  color: string;
 }
 
 interface TagInterface {
