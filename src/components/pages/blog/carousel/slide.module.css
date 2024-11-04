@@ -1,6 +1,6 @@
 .slide {
   height: max-content;
-  max-width: 120rem;
+  max-width: 132rem;
   flex: 0 0 100%;
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -43,7 +43,7 @@
 .content {
   grid-column: 1 / span 8;
   gap: 1.6rem;
-  padding-left: 1.2rem;
+  padding-left: 0.6rem;
   max-height: var(--content-height);
   transition: max-height 0.3s ease;
 
