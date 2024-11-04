@@ -61,6 +61,11 @@
     font-style: normal;
     font-weight: 600;
     line-height: 24px;
+    transition: color 0.1s linear;
+
+    &:hover {
+      color: var(--custom-dark-color);
+    }
   }
 
   & p {

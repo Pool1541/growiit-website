@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from './recent-card.module.css';
+import { GenerateCssColorVariable } from '@/lib';
 import { MetadataLabel, Tag } from '@/components/ui';
 import { CalendarIcon } from '@/components/icons';
 
@@ -10,11 +11,13 @@ export default function RecentCard({
   date,
   tags = [],
   slug,
+  color
 }: BlogArticleInterface) {
   const articleLink = `/blog/${slug}`;
+  const style = GenerateCssColorVariable('--custom-dark-color', color);
 
   return (
-    <article className={styles['recent-card']}>
+    <article className={styles['recent-card']} style={style}>
       <div className={styles['image-container']}>
         <a href={articleLink}>
           <img src={image.src} alt={image.alt} />
