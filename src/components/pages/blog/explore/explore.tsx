@@ -81,7 +81,7 @@ export default function Explore() {
               </h2>
               <div className={styles['recent-cards']}>
                 {
-                  articles.map((article) => (
+                  articles.slice(2, 4).map((article) => (
                     <RecentCard {...article} key={article.slug} />
                   ))
                 }
