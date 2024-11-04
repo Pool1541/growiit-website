@@ -16,7 +16,7 @@ export default function Slide({ title, description, author, date, image, tags }:
   return (
     <article className={`${styles.slide} ${styles['out-of-view']}`}>
       <a className={styles['slide-image-wrapper']} href="#" >
-        <img className={styles['slide-image']} src={image} alt='' />
+        <img className={styles['slide-image']} src={image.src} alt='' />
       </a>
       <div className={styles.content}>
         <div className={styles.metadata}>

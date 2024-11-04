@@ -22,7 +22,7 @@ export default function BlogCard({
       <div
         className={styles['card-image']}
         style={{
-          backgroundImage: `url(${image})`,
+          backgroundImage: `url(${image.src})`,
         }}
         onClick={() => router.push(articleLink)}>
         {tags.map(({ tag, slug }) => (

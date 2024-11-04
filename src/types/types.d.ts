@@ -1,15 +1,20 @@
 interface BlogArticleInterface {
   title: string;
   description: string;
-  image: string;
+  image: BlogArticleImageInterface;
   slug: string;
   author: string;
   date: string;
-  tags: TagInterface[];
+  tags: BlogArticleTagInterface[];
   color: string;
 }
 
-interface TagInterface {
+interface BlogArticleTagInterface {
   tag: string;
   slug: string;
+}
+
+interface BlogArticleImageInterface {
+  src: string;
+  alt: string;
 }
