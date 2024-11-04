@@ -1,7 +1,6 @@
-import { Header } from '@/components/layout/header';
-import { Footer } from '@/components/layout/footer';
 import { Metadata } from 'next';
-import { HeaderVariables } from '@/types';
+import { Header, Footer, NewsLetter } from '@/components/layout';
+import type { HeaderVariables } from '@/types';
 
 const headerVariables: HeaderVariables = {
   '--text-color': '#000000',
@@ -22,6 +21,7 @@ export default function Layout({
     <>
       <Header variables={headerVariables} />
       {children}
+      <NewsLetter />
       <Footer />
     </>
   );
