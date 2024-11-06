@@ -1,4 +1,4 @@
-.slide {
+.hero {
   height: max-content;
   max-width: 132rem;
   flex: 0 0 100%;
@@ -16,7 +16,7 @@
   &.out-of-view {
     opacity: 0.2;
     
-    & .slide-image-wrapper {
+    & .hero-image-wrapper {
       pointer-events: none;
     }
   
@@ -26,14 +26,18 @@
       pointer-events: none;
     }
   }
+
+  &.no-anchors {
+    user-select: text;
+  }
 }
 
 
-.slide-image-wrapper {
+.hero-image-wrapper {
   grid-column: 1 / span 12;
 }
 
-.slide-image {
+.hero-image {
   width: 100%;
   display: block;
   aspect-ratio: 1320 / 512;
@@ -91,12 +95,12 @@
     margin-left: -0.8rem;
   }
 
-  &:hover strong {
+  &:not(.no-anchors):hover strong {
     background-size: 0 100%;
     color: var(--custom-article-dark-color);
   }
 
-  &:hover {
+  &:not(.no-anchors):hover {
     color: var(--custom-article-dark-color);
   }
 }

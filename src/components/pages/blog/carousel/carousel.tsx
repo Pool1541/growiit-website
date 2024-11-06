@@ -17,7 +17,7 @@ import {
 import { DotButton, useDotButton } from './EmblaCarouselDotButton'
 import './embla.css'
 import Slide from './slide';
-import styles from './slide.module.css'
+import styles from '../hero/hero.module.css'
 
 const TWEEN_FACTOR_BASE = 0.84
 
