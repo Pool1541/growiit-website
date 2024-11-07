@@ -7,6 +7,10 @@ interface BlogArticleInterface {
   date: string;
   tags: BlogArticleTagInterface[];
   color: string;
+  published: boolean;
+  body: string;
+  views?: number;
+  lastModified?: number
 }
 
 interface BlogArticleTagInterface {
@@ -18,3 +22,5 @@ interface BlogArticleImageInterface {
   src: string;
   alt: string;
 }
+
+declare module '@fec/remark-a11y-emoji';
