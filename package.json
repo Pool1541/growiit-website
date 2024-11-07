@@ -18,9 +18,17 @@
     "react": "^19.0.0-rc-cae764ce-20241025",
     "react-dom": "^19.0.0-rc-cae764ce-20241025",
     "react-google-recaptcha": "^3.1.0",
-    "yup": "^1.4.0"
+    "yup": "^1.4.0",
+    "rehype-autolink-headings": "^7.1.0",
+    "rehype-slug": "^6.0.0",
+    "remark-gfm": "^4.0.0",
+    "remark-toc": "^9.0.0",
+    "next-mdx-remote": "^5.0.0",
+    "bright": "^0.8.5",
+    "gray-matter": "^4.0.3"
   },
   "devDependencies": {
+    "@fec/remark-a11y-emoji": "^4.0.2",
     "@types/node": "^20",
     "@types/react": "npm:types-react@19.0.0-rc.1",
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
