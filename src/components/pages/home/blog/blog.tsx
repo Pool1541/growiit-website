@@ -14,7 +14,9 @@ const articles: BlogArticleInterface[] = [
     author: 'Jhon Doe',
     date: '2023-02-01',
     tags: [{ tag: 'IA', slug: 'ia' }, { tag: 'Openai', slug: 'openai' }],
-    color: '#D8ECF7'
+    color: '#D8ECF7',
+    body: '',
+    published: true
   },
   {
     title: 'Cómo usar Figma para mejorar tu flujo de trabajo',
@@ -27,7 +29,9 @@ const articles: BlogArticleInterface[] = [
     author: 'Pool Llerena',
     date: '2023-01-01',
     tags: [{ tag: 'Diseño web', slug: 'diseno-web' }, { tag: 'UX/UI', slug: 'uxui' }, { tag: 'Javascript', slug: 'javascript' }],
-    color: '#DFFFE9'
+    color: '#DFFFE9',
+    body: '',
+    published: true
   },
   {
     title: 'Google search console y SEO',
@@ -40,7 +44,9 @@ const articles: BlogArticleInterface[] = [
     author: 'Jenna Doe',
     date: '2023-03-01',
     tags: [{ tag: 'Google', slug: 'google' }, { tag: 'SEO', slug: 'seo' }, { tag: 'Marketing', slug: 'marketing' }],
-    color: '#f7e6d8'
+    color: '#f7e6d8',
+    body: '',
+    published: true
   },
   {
     title: 'Docker y Nodejs para DevOps',
@@ -53,7 +59,9 @@ const articles: BlogArticleInterface[] = [
     author: 'Pool Llerena',
     date: '2023-04-01',
     tags: [{ tag: 'Docker', slug: 'docker' }, { tag: 'Nodejs', slug: 'nodejs' }, { tag: 'DevOps', slug: 'devops' }],
-    color: '#F2DFFF'
+    color: '#F2DFFF',
+    body: '',
+    published: true
   },
 ];
 
