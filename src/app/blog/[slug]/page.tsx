@@ -7,6 +7,7 @@ import { HeaderVariables } from "@/types";
 import { Article } from "@/components/pages/blog/article";
 import getPosts, { getPost } from "@/lib/get-posts";
 import { PostBody } from "@/components/pages/blog/post-body/post-body";
+import { RecommendedArticles } from "@/components/pages/blog/recommended-articles";
 
 type Params = Promise<{ slug: string }>;
 
@@ -39,6 +40,7 @@ export default async function Page(props: { params: Params}) {
         <Article>
           <PostBody>{ article.body }</PostBody>
         </Article>
+        <RecommendedArticles />
       </main>
     </>
   )
