@@ -1,4 +1,6 @@
 .card {
+  max-width: 40rem;
+  min-width: 32rem;
   flex: 1 1 30rem;
   display: flex;
   flex-direction: column;
@@ -7,10 +9,12 @@
   gap: 1rem;
   box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.09);
   scroll-snap-align: start;
+  background-color: var(--white);
 
   @media screen and (max-width: 1200px) {
     flex: 0 0 85%;
-    max-width: 30rem;
+    max-width: 32rem;
+    min-width: 28rem;
   }
 
   & h3 {
