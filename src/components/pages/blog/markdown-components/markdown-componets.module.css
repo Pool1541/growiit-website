@@ -1,0 +1,77 @@
+.code * {
+  font-family: monospace;
+}
+
+.text {
+  color: var(--text-h-contrast);
+}
+
+h1.text {
+  display: none;
+}
+
+h2.text {
+  font-size: 2.8rem;
+  line-height: 1.5;
+  font-weight: 500;
+  margin: 5rem 0 2rem 0;
+}
+
+h3.text {
+  font-size: 2.4rem;
+  line-height: 1.5;
+  font-weight: 500;
+  margin: 5rem 0 2rem 0;
+}
+
+h4.text {
+  font-size: 2.2rem;
+  line-height: 1.5;
+  font-weight: 500;
+  margin: 5rem 0 2rem 0;
+}
+
+h5.text {
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 500;
+  margin: 5rem 0 2rem 0;
+}
+
+h6.text {
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 500;
+  margin: 5rem 0 2rem 0;
+}
+
+p.text {
+  color: #2d3442;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.image {
+  margin: 3rem 0 4rem 0;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+.anchor {
+  color: rgb(27, 106, 255);
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+.list {
+  margin: 2rem 0;
+  list-style: square;
+  padding-left: 2rem;
+
+  & li {
+    margin-bottom: 1rem;
+  }
+}
