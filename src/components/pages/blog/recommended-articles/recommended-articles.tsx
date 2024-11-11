@@ -1,8 +1,8 @@
 import { Wrapper } from '@/components/layout';
 import { ArrowToBottom } from '@/components/icons';
-import styles from './recommended-articles.module.css';
 import { BlogCard } from '@/components/ui';
 import getPosts from '@/lib/get-posts';
+import styles from './recommended-articles.module.css';
 
 export default async function RecommendedArticles() {
   const articles = await getPosts();
