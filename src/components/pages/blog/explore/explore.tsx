@@ -1,9 +1,9 @@
 import { Wrapper } from "@/components/layout/wrapper";
 import { ArrowToBottom } from "@/components/icons";
-import styles from './explore.module.css'
 import { HorizontalCard } from "../horizontal-card";
 import { RecentCard } from "../recent-card";
 import getPosts from "@/lib/get-posts";
+import styles from './explore.module.css'
 
 export default async function Explore() {
   const articles = await getPosts();
