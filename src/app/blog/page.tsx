@@ -1,11 +1,11 @@
-
 import { EmblaOptionsType } from 'embla-carousel';
 import { EmblaCarousel, Explore } from '@/components/pages/blog';
-import { adjustColorBrightness } from '@/lib';
 import { Header } from '@/components/layout';
+import { adjustColorBrightness } from '@/lib';
+import getPosts from '@/lib/get-posts';
 import type { HeaderVariables, MainVariables } from '@/types';
 import './blog.css'
-import getPosts from '@/lib/get-posts';
+
 
 /**
  * Carga el componente en un chunk separado (SSR)
