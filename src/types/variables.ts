@@ -5,3 +5,7 @@ export interface HeaderVariables extends CSSProperties {
   '--custom-color': string;
   '--header-height': string;
 }
+
+export interface MainVariables extends CSSProperties {
+  '--custom-article-bg-color': string,
+}
