@@ -72,6 +72,9 @@ p.text {
   padding-left: 2rem;
 
   & li {
+    font-size: 1.7rem;
+    line-height: 1.5;
+    font-weight: 400;
     margin-bottom: 1rem;
   }
 }
