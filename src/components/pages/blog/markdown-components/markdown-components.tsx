@@ -19,7 +19,6 @@ export const mdxComponents: MDXComponents = {
   img: (props) => (
     <Image
       className={styles.image}
-      sizes='100vw'
       width={928}
       height={522}
       {...(props as ImageProps)}
