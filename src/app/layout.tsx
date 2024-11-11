@@ -30,7 +30,7 @@ export const metadata: Metadata = {
       alt: "Diseño y desarrollo de páginas web a medida | Growiit",
       type: "image/jpeg",
       width: 1200,
-      height: 600,
+      height: 630,
     }
   },
   openGraph: {
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
       alt: "Diseño y desarrollo de páginas web a medida | Growiit",
       type: "image/jpeg",
       width: 1200,
-      height: 600,
+      height: 630,
     }
   }
 };
