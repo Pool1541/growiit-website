@@ -3,6 +3,10 @@ import { PolicyLayout } from '@/components/layout/policy-layout';
 
 export const metadata: Metadata = {
   title: 'Política de privacidad',
+  description: 'Política de privacidad de Growiit',
+  alternates: {
+    canonical: 'https://growiit.com/politica-de-privacidad',
+  }
 };
 
 export default function Page() {

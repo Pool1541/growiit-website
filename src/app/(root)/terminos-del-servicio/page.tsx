@@ -3,6 +3,10 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Términos del servicio',
+  description: 'Términos y condiciones de servicio de Growiit',
+  alternates: {
+    canonical: 'https://growiit.com/terminos-del-servicio',
+  }
 };
 
 export default function Page() {
