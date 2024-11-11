@@ -65,8 +65,8 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
         slideNode.classList.remove(styles['out-of-view']);
         const customColor = slides[index].color;
         const darkColor = slides[index]['dark-color'];
-        document.querySelector('body')!.style.setProperty('--custom-article-bg-color', customColor)
-        document.querySelector('body')!.style.setProperty('--custom-article-dark-color', darkColor)
+        document.querySelector('main')!.style.setProperty('--custom-article-bg-color', customColor)
+        document.querySelector('main')!.style.setProperty('--custom-article-dark-color', darkColor)
         document.querySelector('header')!.style.setProperty('--custom-color', darkColor)
       } else {
         slideNode.classList.add(styles['out-of-view']);
