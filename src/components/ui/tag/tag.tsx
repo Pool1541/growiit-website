@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import clsx from 'clsx';
 import styles from './tag.module.css';
 
@@ -23,8 +24,8 @@ export default function Tag({ children, link, as = 'div', className, size = 'sma
   )
 
   return (
-    <a href={link} className={clsx(styles.tag, className)} onClick={stopPropagation}>
+    <Link href={link} className={clsx(styles.tag, className)} onClick={stopPropagation}>
       <span>{children}</span>
-    </a>
+    </Link>
   );
 }

@@ -1,8 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-import styles from './recent-card.module.css';
-import { GenerateCssColorVariable } from '@/lib';
+import Link from 'next/link';
 import { MetadataLabel, Tag } from '@/components/ui';
 import { CalendarIcon } from '@/components/icons';
+import { GenerateCssColorVariable } from '@/lib';
+import styles from './recent-card.module.css';
 
 export default function RecentCard({
   title,
@@ -19,18 +20,18 @@ export default function RecentCard({
   return (
     <article className={styles['recent-card']} style={style}>
       <div className={styles['image-container']}>
-        <a href={articleLink}>
+        <Link href={articleLink}>
           <img src={image.src} alt={image.alt} />
-        </a>
+        </Link>
       </div>
       <div className={styles.metadata}>
         <MetadataLabel icon={<CalendarIcon />} size='medium'>
           {date}
         </MetadataLabel>
       </div>
-      <a href={articleLink}>
+      <Link href={articleLink}>
         <h3>{title}</h3>
-      </a>
+      </Link>
       <p>{description}</p>
       <div className={styles.tags}>
         {tags.map(({ tag, slug }) => (

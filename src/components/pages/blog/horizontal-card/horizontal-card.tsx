@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from 'next/link';
 import styles from './horizontal-card.module.css';
 import { MetadataLabel, Tag } from '@/components/ui';
 import { AvatarIcon, CalendarIcon } from '@/components/icons';
@@ -11,9 +12,9 @@ export default function HorizontalCard({ title, description, image, author, date
   return (
     <article className={styles['horizontal-card']} style={style}>
       <div className={styles['image-container']}>
-        <a href={articleLink}>
+        <Link href={articleLink}>
           <img src={image.src} alt={image.alt} />
-        </a>
+        </Link>
       </div>
       <div className={styles.content}>
         <div className={styles.metadata}>
@@ -24,9 +25,9 @@ export default function HorizontalCard({ title, description, image, author, date
             { date }
           </MetadataLabel>
         </div>
-        <a href={articleLink}>
+        <Link href={articleLink}>
           <h3>{ title }</h3>
-        </a>
+        </Link>
         <p>
           { description }
         </p>

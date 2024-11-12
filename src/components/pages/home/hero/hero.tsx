@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from 'next/link';
 import { Wrapper } from '@/components/layout/wrapper';
 import { Tiles } from '@/components/ui/tiles';
 import styles from './hero.module.css';
-
 
 export default function Hero() {
   return (
@@ -15,11 +15,11 @@ export default function Hero() {
               Transformamos tus ideas en soluciones eficaces y elegantes, desde el desarrollo web
               hasta el desarrollo de aplicaciones
             </p>
-            <a href='#contact'>
+            <Link href='#contact'>
               <button>
                 <span>Más información</span>
               </button>
-            </a>
+            </Link>
           </div>
         </div>
         <div className={styles['hero-right']}>

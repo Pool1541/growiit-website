@@ -1,8 +1,9 @@
 'use client';
 
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { AvatarIcon, CalendarIcon, ChevronRightIcon } from '@/components/icons';
 import { Tag, MetadataLabel } from '@/components/ui';
+import { AvatarIcon, CalendarIcon, ChevronRightIcon } from '@/components/icons';
 import styles from './blog-card.module.css';
 
 export default function BlogCard({
@@ -38,10 +39,10 @@ export default function BlogCard({
       <h3>{title}</h3>
       <p>{description}</p>
       <div className={styles['cta-card-button']}>
-        <a href={articleLink}>
+        <Link href={articleLink}>
           <span>Leer más</span>
           <ChevronRightIcon />
-        </a>
+        </Link>
       </div>
     </div>
   );

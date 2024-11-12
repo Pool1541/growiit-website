@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import clsx from 'clsx';
+import Link from 'next/link';
 import { MetadataLabel, Tag } from '@/components/ui';
 import { AvatarIcon, CalendarIcon } from '@/components/icons';
 import styles from './hero.module.css';
-
 
 interface HeroProps extends BlogArticleInterface {
   initialOpacity?: boolean;
@@ -22,7 +22,7 @@ function renderTitle(title: string) {
 
 export default function Hero({ title, description, author, date, image, tags, slug,  initialOpacity, className, noAnchors = false  }: HeroProps) {
   const articleLink = `/blog/${slug}`;
-  const CustomTag = noAnchors ? 'div' : 'a';
+  const CustomTag = noAnchors ? 'div' : Link;
 
   return (
     <article className={clsx(styles.hero, className, { [styles['out-of-view']]: initialOpacity, [styles['no-anchors']]: noAnchors })}>
