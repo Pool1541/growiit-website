@@ -6,3 +6,8 @@
 [] Cambiar los anchor del componente blog card por Links de Nextjs
 [] Reducir el padding del componente Wrapper en mobile.
 [] Corregir la etiqueta del título de cada slide del carousel, actualmente hay un h1 por cada slide, debería haber solo 1 h1.
+[] Cambiar el color de fondo del navbar en mobile.
+
+[] Implementar funcionalidad que permita identificar los artículos más populares por visitas.
+[] Modificar los esquemas json+ld de blog para incluir solo los artículos populares.
+[] Limitar a 4 los artículos mostrados en la página de inicio.
