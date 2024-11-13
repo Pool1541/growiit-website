@@ -1,4 +1,3 @@
-import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { Header } from '@/components/layout';
 import { Article, Hero, PostBody, RecommendedArticles } from '@/components/pages/blog';
@@ -8,21 +7,6 @@ import type { HeaderVariables } from '@/types';
 import styles from './article.module.css';
 
 type Params = Promise<{ slug: string }>;
-
-export const generateMetadata = async (props: { params: Params }): Promise<Metadata> => {
-  const params = await props.params;
-  const slug = await params.slug;
-  const posts = await getPosts();
-  const post = posts.find((post) => post.slug === slug);
-
-  return {
-    title: post?.title,
-    description: post?.description,
-    alternates: {
-      canonical: `https://growiit.com/blog/${params.slug}`,
-    },
-  };
-};
 
 export async function generateStaticParams() {
   const articles = await getPosts();
