@@ -1,8 +1,8 @@
-import { Wrapper } from '@/components/layout/wrapper'
-import styles from './services.module.css'
 import ServiceCard from './service-card'
-import { AditionalServices } from '../aditional-services';
+import { Wrapper } from '@/components/layout/wrapper'
 import { Blurry } from '@/components/ui/blurry';
+import { AditionalServices } from '../aditional-services';
+import styles from './services.module.css'
 
 const services = [
   {
