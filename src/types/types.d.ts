@@ -9,8 +9,8 @@ interface BlogArticleInterface {
   color: string;
   published: boolean;
   body: string;
-  views?: number;
   lastModified?: number
+  faq?: FaqArticleInteface[];
 }
 
 interface BlogArticleTagInterface {
@@ -21,6 +21,11 @@ interface BlogArticleTagInterface {
 interface BlogArticleImageInterface {
   src: string;
   alt: string;
+}
+
+interface FaqArticleInteface {
+  question: string;
+  answer: string;
 }
 
 declare module '@fec/remark-a11y-emoji';
