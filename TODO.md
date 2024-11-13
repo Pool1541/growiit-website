@@ -11,3 +11,5 @@
 [] Implementar funcionalidad que permita identificar los artículos más populares por visitas.
 [] Modificar los esquemas json+ld de blog para incluir solo los artículos populares.
 [] Limitar a 4 los artículos mostrados en la página de inicio.
+
+[] Agregar la información de OG y Twitter en la metadata de la página de Artículo
