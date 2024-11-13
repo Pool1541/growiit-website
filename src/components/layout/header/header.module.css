@@ -51,8 +51,8 @@
 }
 
 .headerNav {
-  flex: 1 1 auto;
-  max-width: 500px;
+  flex: 0 0 auto;
+
 
   @media screen and (max-width: 768px) {
     max-width: 500px;
@@ -112,8 +112,12 @@
   & ul {
     display: flex;
     justify-content: space-between;
-    gap: 2rem;
+    gap: clamp(1.2rem, 1.5vw, 2rem);
     flex: 1 1 auto;
+
+    @media screen and (max-width: 768px) {
+      gap: 3rem;
+    }
 
     & a {
       position: relative;
