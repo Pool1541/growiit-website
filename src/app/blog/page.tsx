@@ -44,6 +44,7 @@ export default async function Page() {
       <Header variables={headerVariables} />
       <main id='blog' className="landing-section blog" data-header-color='black' style={mainVariables}>
         <div>
+          <h1 className='hidden'>Artículos sobre tecnología, diseño y desarrollo web, marketing digital y más.</h1>
           <EmblaCarousel slides={slidesWithDarkColor} options={options} />
           <Explore />
         </div>

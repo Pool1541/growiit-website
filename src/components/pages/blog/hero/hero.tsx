@@ -8,7 +8,7 @@ import styles from './hero.module.css';
 interface HeroProps extends BlogArticleInterface {
   initialOpacity?: boolean;
   className?: string;
-  noAnchors?: boolean;
+  asSlide?: boolean;
 }
 
 function renderTitle(title: string) {
@@ -20,12 +20,13 @@ function renderTitle(title: string) {
   );
 }
 
-export default function Hero({ title, description, author, date, image, tags, slug,  initialOpacity, className, noAnchors = false  }: HeroProps) {
+export default function Hero({ title, description, author, date, image, tags, slug,  initialOpacity, className, asSlide = false  }: HeroProps) {
   const articleLink = `/blog/${slug}`;
-  const CustomTag = noAnchors ? 'div' : Link;
+  const CustomTag = asSlide ? Link : 'div';
+  const CustomHeading = asSlide ? 'h2' : 'h1';
 
   return (
-    <article className={clsx(styles.hero, className, { [styles['out-of-view']]: initialOpacity, [styles['no-anchors']]: noAnchors })}>
+    <article className={clsx(styles.hero, className, { [styles['out-of-view']]: initialOpacity, [styles['as-slide']]: !asSlide })}>
       <CustomTag className={styles['hero-image-wrapper']} href={articleLink} >
         <img className={styles['hero-image']} src={image.src} alt={image.alt} />
       </CustomTag>
@@ -38,8 +39,8 @@ export default function Hero({ title, description, author, date, image, tags, sl
             { date }
           </MetadataLabel>
         </div>
-        <CustomTag href={articleLink} className={styles.title}>
-          <h1 className={clsx({[styles["no-anchors"]]: noAnchors})}>{renderTitle(title)}</h1>
+        <CustomTag href={articleLink} className={styles['title-wrapper']}>
+          <CustomHeading className={clsx(styles.title, {[styles["as-slide"]]: !asSlide})}>{renderTitle(title)}</CustomHeading>
         </CustomTag>
         <p>
           { description }

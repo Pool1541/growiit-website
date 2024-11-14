@@ -27,7 +27,7 @@
     }
   }
 
-  &.no-anchors {
+  &.as-slide {
     user-select: text;
   }
 }
@@ -76,7 +76,7 @@
   margin-bottom: 1.2rem;
 }
 
-.title h1 {
+.title-wrapper .title {
   font-family: var(--font-nunito);
   color: var(--slate-800);
   font-size: clamp(2.4rem, 5vw, 4.8rem);
@@ -95,12 +95,12 @@
     margin-left: -0.8rem;
   }
 
-  &:not(.no-anchors):hover strong {
+  &:not(.as-slide):hover strong {
     background-size: 0 100%;
     color: var(--custom-article-dark-color);
   }
 
-  &:not(.no-anchors):hover {
+  &:not(.as-slide):hover {
     color: var(--custom-article-dark-color);
   }
 }

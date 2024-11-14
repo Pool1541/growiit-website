@@ -34,7 +34,7 @@ export default async function Page(props: { params: Params }) {
     <>
       <Header variables={headerVariables} />
       <main className={styles.article} style={style}>
-        <Hero {...article} className={styles['pb-15']} noAnchors />
+        <Hero {...article} className={styles['pb-15']} />
         <Article>
           <PostBody>{article.body}</PostBody>
         </Article>
