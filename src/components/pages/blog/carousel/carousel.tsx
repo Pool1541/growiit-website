@@ -68,6 +68,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
         document.querySelector('main')!.style.setProperty('--custom-article-bg-color', customColor)
         document.querySelector('main')!.style.setProperty('--custom-article-dark-color', darkColor)
         document.querySelector('header')!.style.setProperty('--custom-color', darkColor)
+        document.querySelector('header')!.style.setProperty('--navbar-custom-bg', darkColor)
       } else {
         slideNode.classList.add(styles['out-of-view']);
       }

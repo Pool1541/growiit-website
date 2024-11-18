@@ -28,6 +28,7 @@ export default async function Page(props: { params: Params }) {
     '--text-color': '#000000',
     '--custom-color': adjustColorBrightness(article.color, -50),
     '--header-height': '10rem',
+    '--navbar-custom-bg': adjustColorBrightness(article.color, -50)
   };
 
   return (

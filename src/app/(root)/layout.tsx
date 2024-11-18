@@ -9,6 +9,7 @@ const headerVariables: HeaderVariables = {
   '--text-color': '#ffffff',
   '--custom-color': '#ed696c',
   '--header-height': '15rem',
+  '--navbar-custom-bg': '#9b5bf8'
 };
 
 const posts = await getPosts();

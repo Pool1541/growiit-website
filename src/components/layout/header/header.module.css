@@ -64,7 +64,7 @@
     top: 0;
     right: 0;
     height: 110vh;
-    background-color: var(--secondary);
+    background-color: var(--navbar-custom-bg, #9b5bf8);
     color: var(--white);
     transform: translateX(100%);
     transition: transform 0.3s ease;

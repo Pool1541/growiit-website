@@ -26,6 +26,7 @@ export default async function Page() {
     '--text-color': '#000000',
     '--custom-color': initialCustomDarkColor,
     '--header-height': '10rem',
+    '--navbar-custom-bg': initialCustomColor,
   };
 
   const mainVariables: MainVariables = {
