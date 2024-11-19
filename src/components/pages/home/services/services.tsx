@@ -65,7 +65,6 @@ export default function Services() {
         </div>
       </Wrapper>
       <Blurry  />
-      <Blurry bottom />
     </section>
   )
 }

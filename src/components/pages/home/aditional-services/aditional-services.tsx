@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import { Wrapper } from '@/components/layout';
-import { Title } from '@/components/ui/title';
+import { Blurry, Title  } from '@/components/ui';
 import styles from './aditional-services.module.css';
 
 const services = [
@@ -46,7 +46,7 @@ const services = [
 export default function AditionalServices() {
   return (
     <section id='aditional-services' className='landing-section' data-header-color='black'>
-      <Wrapper>
+      <Wrapper style={{ position: 'relative'}}>
         <div className={styles['aditional-services']}>
           <Title as='h2'>Soluciones digitales personalizadas para tu negocio</Title>
           <p>
@@ -71,6 +71,7 @@ export default function AditionalServices() {
             ))}
           </ul>
         </div>
+        <Blurry bottom />
       </Wrapper>
     </section>
   );
