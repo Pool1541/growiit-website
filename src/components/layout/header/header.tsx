@@ -16,7 +16,7 @@ export default function Header({ variables }: { variables: HeaderVariables }) {
   const { scroll } = useScroll(ref);
   useLockedBody(toggleMenu);
 
-  const headerClass = scroll >= 200 ? styles.scrolled : styles.notScrolled;
+  const headerClass = scroll >= 1 ? styles.scrolled : styles.notScrolled;
   const isActive = toggleMenu ? styles.active : '';
 
   function showMenu() {
