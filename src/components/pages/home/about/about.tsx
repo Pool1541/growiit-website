@@ -1,6 +1,6 @@
 import { Wrapper } from '@/components/layout/wrapper';
+import { ImageTiles, Title } from '@/components/ui';
 import styles from './about.module.css';
-import { ImageTiles } from '@/components/ui/image-tiles';
 
 export default function About() {
   return (
@@ -9,25 +9,15 @@ export default function About() {
         <div className={styles.container}>
           <div className={styles.content}>
             <article>
-              <h2>Sobre nosotros</h2>
+              <Title as='h2' size='medium' align='left'>Conoce a Growiit</Title>
               <p>
-                Somos expertos en brindar soluciones innovadoras para el{' '}
-                <strong>desarrollo web</strong>. Con un equipo interno de programadores altamente
-                calificados y comprometidos, Growiit se presenta como una opción flexible y
-                dinámica, lista para enfrentar retos de cualquier magnitud, aprovechando al máximo
-                las tendencias actuales en desarrollo web.
+              Somos tu socio estratégico en <strong>diseño y desarrollo web</strong>. En Growiit, un equipo apasionado y altamente calificado transforma tus ideas en soluciones digitales innovadoras, diseñadas para crecer contigo y destacar en el competitivo mundo online.
               </p>
             </article>
             <article>
-              <h3>Desata el Poder de tu Presencia Digital</h3>
+              <Title as='h3' size='small' align='left'> Impulsa tu negocio con tecnología personalizada</Title>
               <p>
-                En Growiit, convertimos tus ideas en experiencias digitales extraordinarias.
-                Especializados en el desarrollo de páginas web, mantenimiento de plataformas
-                digitales y soluciones de software personalizadas , nuestro equipo está comprometido
-                a llevar tu visión al mundo en línea. Desde la creación de sitios web intuitivos
-                hasta la implementación de soluciones de software a medida, trabajamos contigo para
-                alcanzar tus objetivos empresariales y satisfacer las necesidades únicas de tu
-                empresa. Únete a nosotros mientras creamos juntos el futuro digital de tu negocio.
+              En Growiit, fusionamos creatividad y tecnología para ofrecer páginas web intuitivas, mantenimiento de plataformas digitales y soluciones a medida. Nos dedicamos a entender tus necesidades únicas y trabajar juntos para convertir tu visión en realidad. Haz de tu presencia digital una herramienta clave para el éxito.
               </p>
             </article>
           </div>

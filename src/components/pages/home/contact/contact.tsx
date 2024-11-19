@@ -3,8 +3,8 @@
 
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import ReCAPTCHA from 'react-google-recaptcha';
-import { InputGroup } from "@/components/ui/input-group";
 import { Wrapper } from "@/components/layout/wrapper";
+import { InputGroup, Title } from "@/components/ui";
 import { validationSchema } from "@/lib";
 import type { handleSubmit } from '@/types';
 import styles from './contact.module.css'
@@ -42,10 +42,9 @@ export default function Contact() {
       <Wrapper className={`${styles['flex-wrapper']}`}>
           <div className={styles.left}>
             <div className={styles.header}>
-              <h2>Te contactamos</h2>
+              <Title as="h2">Hablemos de tu próximo proyecto</Title>
               <p>
-                Nuestro equipo colaborará contigo para entender a fondo las necesidades de tu negocio,
-                tus objetivos y tu visión.
+                Queremos conocerte y entender tus objetivos. En Growiit, trabajamos contigo para diseñar soluciones digitales que impulsen tu negocio al siguiente nivel. ¡Contáctanos y hagamos que suceda!
               </p>
             </div>
             <Formik

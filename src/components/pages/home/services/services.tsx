@@ -1,7 +1,6 @@
 import ServiceCard from './service-card'
 import { Wrapper } from '@/components/layout/wrapper'
-import { Blurry } from '@/components/ui/blurry';
-import { AditionalServices } from '../aditional-services';
+import { Blurry, Title } from '@/components/ui';
 import styles from './services.module.css'
 
 const services = [
@@ -52,13 +51,11 @@ const services = [
 export default function Services() {
   return (
     <section id='services' className={`${styles.services} landing-section`} data-header-color='black'>
-      <Wrapper>
+      <Wrapper small>
         <div className={styles.header}>
-          <h2>Nuestros planes</h2>
+          <Title as='h2'>Planes diseñados para crecer contigo</Title>
           <p>
-            Ofrecemos una variedad de planes adaptables a las necesidades específicas de tu negocio.
-            Desde pequeñas páginas web hasta soluciones complejas, nuestros planes están diseñados
-            para ayudarte a alcanzar tus objetivos digitales de manera efectiva y escalable.
+            Nuestros planes flexibles están pensados para adaptarse a empresas de todos los tamaños. Desde sitios web básicos hasta desarrollos personalizados, ofrecemos opciones que garantizan escalabilidad, eficacia y resultados sobresalientes.
           </p>
         </div>
         <div className={styles.grid}>
@@ -66,7 +63,6 @@ export default function Services() {
               <ServiceCard key={service.title} important={service.important} service={service} />
             ))}
         </div>
-        <AditionalServices />
       </Wrapper>
       <Blurry  />
       <Blurry bottom />
