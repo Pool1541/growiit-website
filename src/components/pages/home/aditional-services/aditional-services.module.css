@@ -2,23 +2,18 @@
   display: flex;
   flex-direction: column;
   color: var(--text-contrast);
-  padding: 5rem 0;
+  padding: 10rem 0 5rem 0;
 
-  & h2 {
-    text-align: center;
-    color: var(--text-h-contrast);
-
-    @media screen and (max-width: 450px) {
-      text-align: left;
-    }
+  @media screen and (max-width: 450px) {
+    padding: 5rem 0;
   }
 
   & > p {
-    margin-top: 3rem;
-    max-width: 800px;
+    max-width: 850px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 2rem;
     font-size: var(--paragraph-responsive);
 
     @media screen and (max-width: 450px) {

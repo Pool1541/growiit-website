@@ -47,32 +47,13 @@
       }
     }
 
-    & h1 {
-      font-size: clamp(3.5rem, 4.5vw, 6rem);
-      line-height: 1.2;
-      font-weight: 600;
-      color: var(--white);
-      margin-bottom: 1.6rem;
-    }
-
-    & h2 {
-      color: var(--accent);
-      text-align: left;
-      font-size: clamp(2.5rem, 5vw, 4rem);
-      font-weight: 300;
-      margin-bottom: 5rem;
-
-      @media screen and (max-width: 450px) {
-        text-align: center;
-      }
-    }
-
     & p {
-      font-size: clamp(2rem, 5vw, 2.2rem);
+      font-size: clamp(1.8rem, 2.5vw, 2.2rem);
       line-height: 1.2;
       font-weight: 300;
       margin-bottom: 5rem;
       text-align: left;
+      text-wrap: pretty;
     }
 
     & button {
@@ -104,8 +85,8 @@
       }
 
       & > span {
-        font-weight: 500;
-        font-size: clamp(1.8rem, 4vw, 2.2rem);
+        font-weight: 600;
+        font-size: clamp(1.8rem, 4vw, 2rem);
       }
     }
   }
@@ -113,7 +94,7 @@
 
 .hero-right {
   position: relative;
-  width: 80%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;

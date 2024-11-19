@@ -1,10 +1,14 @@
 .contact {
   margin: 0;
-  padding: 10rem 0;
+  padding: 10rem 0 5rem 0;
   background-color: var(--white);
   color: var(--text-contrast);
   position: relative;
   overflow: hidden;
+
+  @media screen and (max-width: 450px) {
+    padding: 5rem 0;
+  }
 }
 
 .flex-wrapper {
@@ -44,20 +48,14 @@
   margin: auto;
   text-align: center;
 
-  & h2 {
-    color: var(--text-h-contrast);
-    font-size: clamp(3rem, 8vw, 5rem);
-
-    @media screen and (max-width: 450px) {
-      text-align: left;
-    }
-  }
-
   & > p {
+    margin-top: 2rem;
     font-size: var(--paragraph-responsive);
+    text-wrap: balance;
 
     @media screen and (max-width: 450px) {
       text-align: left;
+      text-wrap: wrap;
     }
   }
 }

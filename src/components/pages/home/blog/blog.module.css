@@ -1,8 +1,12 @@
 .blog {
   margin: 0;
-  padding: 5rem 0;
+  padding: 10rem 0 5rem 0;
   background: var(--white);
   color: var(--text-contrast);
+
+  @media screen and (max-width: 450px) {
+    padding: 5rem 0;
+  }
 }
 
 .blog-header {
@@ -10,25 +14,19 @@
   flex-direction: column;
   justify-content: center;
 
-  & h2 {
-    text-align: center;
-    color: var(--text-h-contrast);
-
-    @media screen and (max-width: 450px) {
-      text-align: left;
-    }
-  }
-
   & p {
     width: 100%;
+    max-width: 850px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
+    text-wrap: balance;
     font-size: var(--paragraph-responsive);
     
     @media screen and (max-width: 450px) {
       text-align: left;
+      text-wrap: wrap;
     }
   }
 }
