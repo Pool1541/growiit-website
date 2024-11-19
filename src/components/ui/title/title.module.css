@@ -2,12 +2,7 @@
   line-height: 1.2;
   font-weight: 600;
   color: var(--text-h-contrast);
-  text-align: center;
   text-wrap: balance;
-
-  @media screen and (max-width: 450px) {
-    text-align: left;
-  }
 }
 
 .title.small {
@@ -24,4 +19,24 @@
 
 .title.xlarge {
   font-size: clamp(2.8rem, 4.5vw, 3.6rem);
+}
+
+.title.left {
+  text-align: left;
+}
+
+.title.center {
+  text-align: center;
+}
+
+.title.right {
+  text-align: right;
+}
+
+.title.normal {
+  text-align: center;
+
+  @media screen and (max-width: 450px) {
+    text-align: left;
+  }
 }

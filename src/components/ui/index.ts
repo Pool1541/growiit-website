@@ -7,3 +7,4 @@ export * from './whatsapp-button';
 export * from './blog-card';
 export * from './tag';
 export * from './metadata-label';
+export * from './title';
