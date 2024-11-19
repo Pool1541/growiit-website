@@ -12,8 +12,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const routes: MetadataRoute.Sitemap = [
     {
-      url: '',
-      prority: 1,
+      url: '/',
+      priority: 1.0,
     },
     {
       url: '/politica-de-privacidad',
@@ -24,7 +24,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.3,
     },
     {
-      url: '/terminos-y-conidiciones',
+      url: '/terminos-y-condiciones',
       priority: 0.3,
     },
     {
