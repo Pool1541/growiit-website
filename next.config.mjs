@@ -5,6 +5,15 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'i.ytimg.com'
+      },
+      {
+        protocol: 'https',
+        hostname: 'bubble.io'
+      }
+      ,
+      {
+        protocol: 'https',
+        hostname: 'i.postimg.cc'
       }
     ]
   }
