@@ -2,7 +2,7 @@ import matter from 'gray-matter';
 import path from 'path';
 import fs from 'fs/promises';
 import { cache } from 'react';
-import { createSlug } from './replace-accents';
+import { createSlug } from './create-slug';
 
 // `cache` is a React 18 feature that allows you to cache a function for the lifetime of a request.
 // this means getPosts() will only be called once per page build, even though we may call it multiple times
