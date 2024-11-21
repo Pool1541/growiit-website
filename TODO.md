@@ -28,6 +28,8 @@
 
 - [ ] Agregar la información de OG y Twitter en la metadata de la página de Artículo.
 
+- [x] En la función de creación de slugs para los artículos, cambiar las letras ñ por n.
+
 
 ## v1.1
 
