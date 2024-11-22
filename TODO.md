@@ -30,6 +30,16 @@
 
 - [x] En la función de creación de slugs para los artículos, cambiar las letras ñ por n.
 
+- [ ] Crear las funciones necesarias para obtener los artículos desde las diferentes vistas. (últimos publicados, más populares y recomendaciones)
+
+- [ ] Crear la función para suscribirse al newsletter.
+
+- [ ] Completar el diseño del formulario para suscribirse al newsletter.
+
+- [ ] Implementar CI/CD para la publicación de artículos.
+
+- [ ] Implementar git hooks para la ejecución del linter y hacer build del proyecto antes de hacer push.
+
 
 ## v1.1
 
@@ -40,3 +50,19 @@
 - [ ] Modificar los esquemas json+ld de blog para incluir solo los artículos populares.
 
 - [ ] Limitar a 4 los artículos mostrados en la página de inicio.
+
+- [ ] Mejorar la accesibilidad de la página.
+
+- [ ] Bloquear la incrustación por iframe de la web. ```Sec-Fetch-Site: same-origin```
+[Documentación](https://nextjs.org/docs/app/building-your-application/configuring/content-security-policy)
+  
+  ```javascript
+  const nextConfig = {
+    async headers() {
+      headers: [
+        key: 'Content-Security-Policy',
+        value: "frame-ancestors 'none'"
+      ]
+    }
+  }
+  ```
