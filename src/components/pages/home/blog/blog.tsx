@@ -1,10 +1,10 @@
 import { Wrapper } from '@/components/layout/wrapper';
 import { BlogCard, Title } from '@/components/ui';
-import getPosts from '@/lib/get-posts';
+import { getRecommendedPosts } from '@/lib/get-posts';
 import styles from './blog.module.css';
 
 export default async function Blog() {
-  const articles = await getPosts();
+  const articles = await getRecommendedPosts();
   
   return (
     <section id='blog' className={`${styles.blog} landing-section`} data-header-color='black'>

@@ -39,7 +39,7 @@ export default async function Page(props: { params: Params }) {
         <Article>
           <PostBody>{article.body}</PostBody>
         </Article>
-        <RecommendedArticles />
+        <RecommendedArticles currentArticle={article}/>
       </main>
     </>
   );

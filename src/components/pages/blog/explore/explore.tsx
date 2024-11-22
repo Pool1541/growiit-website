@@ -2,11 +2,13 @@ import { Wrapper } from "@/components/layout/wrapper";
 import { ArrowToBottom } from "@/components/icons";
 import { HorizontalCard } from "../horizontal-card";
 import { RecentCard } from "../recent-card";
-import getPosts from "@/lib/get-posts";
+import { getRecentPosts, getTopViewedPosts } from "@/lib/get-posts";
 import styles from './explore.module.css'
 
 export default async function Explore() {
-  const articles = await getPosts();
+  const articles = await getTopViewedPosts();
+  const recentArticles = await getRecentPosts();
+
   return (
     <section id='blog' className={`${styles.explore} landing-section`} data-header-color='black'>
       <Wrapper>
@@ -28,7 +30,7 @@ export default async function Explore() {
               </h2>
               <div className={styles['recent-cards']}>
                 {
-                  articles.slice(2, 4).map((article) => (
+                  recentArticles.map((article) => (
                     <RecentCard {...article} key={article.slug} />
                   ))
                 }

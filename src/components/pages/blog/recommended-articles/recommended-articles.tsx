@@ -1,11 +1,15 @@
 import { Wrapper } from '@/components/layout';
 import { ArrowToBottom } from '@/components/icons';
 import { BlogCard } from '@/components/ui';
-import getPosts from '@/lib/get-posts';
+import { getRecommendedPosts } from '@/lib/get-posts';
 import styles from './recommended-articles.module.css';
 
-export default async function RecommendedArticles() {
-  const articles = await getPosts();
+interface RecommendedArticlesProps {
+  currentArticle: BlogArticleInterface;
+}
+
+export default async function RecommendedArticles({ currentArticle }: RecommendedArticlesProps ) {
+  const articles = await getRecommendedPosts(currentArticle);
 
   return (
     <section className={styles['recommended-articles']}>
