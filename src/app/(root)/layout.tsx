@@ -1,7 +1,7 @@
 import Script from 'next/script';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
-import getPosts from '@/lib/get-posts';
+import { getTopViewedPosts } from '@/lib/get-posts';
 import type { WithContext, Organization, ItemList } from 'schema-dts';
 import type { HeaderVariables } from '@/types';
 
@@ -12,7 +12,7 @@ const headerVariables: HeaderVariables = {
   '--navbar-custom-bg': '#9b5bf8'
 };
 
-const posts = await getPosts();
+const posts = await getTopViewedPosts();
 
 const organizationJsonLd: WithContext<Organization> = {
   '@context': 'https://schema.org',
