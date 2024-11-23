@@ -30,7 +30,7 @@ export default function Footer() {
           <ul>
             <li>
               <Link
-                href='https://api.whatsapp.com/send?phone=573115040128'
+                href='https://api.whatsapp.com/send?phone=51932088984'
                 title='Escríbenos en Whatsapp'
                 rel='noopener noreferrer'
                 target='_blank'>
