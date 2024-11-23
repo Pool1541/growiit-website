@@ -20,7 +20,7 @@ export const getPosts = cache(async () => {
         const filePath = `./posts/${file}`;
         const postContent = await fs.readFile(filePath, 'utf8');
         const { data, content } = matter(postContent);
-        const slug = createSlug(data.title.toLowerCase().replace(/ /g, '-'))
+        const slug = data.slug || createSlug(data.title.toLowerCase().replace(/ /g, '-'));
         data.slug = slug;
 
         if (data.published === false) {
