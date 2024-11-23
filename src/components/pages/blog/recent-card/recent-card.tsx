@@ -8,7 +8,7 @@ import styles from './recent-card.module.css';
 export default function RecentCard({
   title,
   description,
-  image,
+  images,
   date,
   tags = [],
   slug,
@@ -16,12 +16,13 @@ export default function RecentCard({
 }: BlogArticleInterface) {
   const articleLink = `/blog/${slug}`;
   const style = GenerateCssColorVariable('--custom-dark-color', color);
+  const smallImage = images.find(image => image.type === 'small') || images[0];
 
   return (
     <article className={styles['recent-card']} style={style}>
       <div className={styles['image-container']}>
         <Link href={articleLink}>
-          <img src={image.src} alt={image.alt} />
+          <img src={smallImage.src} alt={smallImage.alt} loading='lazy'/>
         </Link>
       </div>
       <div className={styles.metadata}>

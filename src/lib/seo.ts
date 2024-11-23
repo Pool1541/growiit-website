@@ -18,6 +18,7 @@ export function generateFaqJsonLd(faq: { question: string; answer: string }[]) {
 }
 
 export function generateBlogPostingJsonLd(post: BlogArticleInterface) {
+  const largeImage = post.images.find((image) => image.type === 'large') || post.images[0];
   return {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
@@ -41,7 +42,7 @@ export function generateBlogPostingJsonLd(post: BlogArticleInterface) {
         url: 'https://growiit.com/icon.svg',
       },
     },
-    image: post.image.src,
+    image: largeImage.src,
     articleBody: post.description,
     keywords: post.tags.map((tag) => tag.tag),
     articleSection: post.tags[0].tag,
