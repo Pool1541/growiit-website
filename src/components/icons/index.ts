@@ -9,3 +9,4 @@ export { default as ChevronRightIcon } from './chevron-right.icon';
 export { default as ArrowLeft } from './arrow-left.icon';
 export { default as ArrowRight } from './arrow-right.icon';
 export { default as ArrowToBottom } from './arrow-to-bottom.icon';
+export { default as MailBoxIcon } from './mailbox.icon';
