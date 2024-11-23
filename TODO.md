@@ -24,32 +24,38 @@
 
 - [x] Actualizar el copy de la página de inicio para incluir palabras clave.
 
-- [ ] Mejorar el border radius de la imagen del hero manteniendo la consistencia entre todos sus lados, 36px en todos los lados es una buena opción.
+- [x] Mejorar el border radius de la imagen del hero manteniendo la consistencia entre todos sus lados, 36px en todos los lados es una buena opción.
 
-- [ ] Agregar la información de OG y Twitter en la metadata de la página de Artículo.
+- [x] Agregar la información de OG y Twitter en la metadata de la página de Artículo.
 
 - [x] En la función de creación de slugs para los artículos, cambiar las letras ñ por n.
 
-- [ ] Crear las funciones necesarias para obtener los artículos desde las diferentes vistas. (últimos publicados, más populares y recomendaciones)
+- [x] Crear las funciones necesarias para obtener los artículos desde las diferentes vistas. (últimos publicados, más populares y recomendaciones)
 
 - [ ] Crear la función para suscribirse al newsletter.
 
 - [ ] Completar el diseño del formulario para suscribirse al newsletter.
 
-- [ ] Implementar CI/CD para la publicación de artículos.
-
 - [ ] Implementar git hooks para la ejecución del linter y hacer build del proyecto antes de hacer push.
+
+- [x] Cambiar la imagen del hero por una más representativa.
+
+- [x] Optimizar imágenes y subirlas a cloudfront.
+
+- [x] Modificar los esquemas json+ld de blog para incluir solo los artículos populares.
 
 
 ## v1.1
+
+- [ ] Implementar CI/CD para la publicación de artículos.
 
 - [ ] Componetizar las secciones ya que hay algunos elementos que se repiten, como el título y descripción de las secciones, también el contenedor de secciones.
 
 - [ ] Implementar funcionalidad que permita identificar los artículos más populares por visitas.
 
-- [ ] Modificar los esquemas json+ld de blog para incluir solo los artículos populares.
+- [ ] Mejorar las funciones que obtienen los artículos en las diferentes vistas (últimos publicados, más populares y recomendaciones). Se deben reimplementar con la información obtenida desde la base de datos para filtrar correctamente los artículos con más visitas, los últimos publicados y las recomendaciones.
 
-- [ ] Limitar a 4 los artículos mostrados en la página de inicio.
+- [ ] Implementar paginación en el blog.
 
 - [ ] Mejorar la accesibilidad de la página.
 
