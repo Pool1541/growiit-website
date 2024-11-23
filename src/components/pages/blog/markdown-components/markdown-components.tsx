@@ -1,7 +1,4 @@
-/* eslint-disable jsx-a11y/alt-text */
-
 import Link from 'next/link';
-import Image, { ImageProps } from 'next/image';
 import { MDXComponents } from 'mdx/types';
 import { Code } from 'bright';
 import React, { isValidElement, ReactNode } from 'react';
@@ -16,11 +13,12 @@ export const mdxComponents: MDXComponents = {
     );
   },
   img: (props) => (
-    <Image
+    <img
       className={styles.image}
       width={928}
       height={522}
-      {...(props as ImageProps)}
+      {...(props)}
+      alt={props.alt}
     />
   ),
   pre: ({
