@@ -36,7 +36,7 @@ export default function Hero() {
         <div className={styles['hero-right']}>
           <div>
             <img
-              src='https://d1ssfwckvhk5up.cloudfront.net/public/office-girl-2.webp'
+              src='https://d1ssfwckvhk5up.cloudfront.net/public/banner-image.webp'
               alt='Mujer con una mirada fija y sonriente hacia la cámara'
             />
             <Tiles top='20%' right='-35%' width='50%' height='30rem' variant='partial' />
