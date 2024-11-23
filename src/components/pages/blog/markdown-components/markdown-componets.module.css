@@ -60,7 +60,7 @@ p.text {
 }
 
 .anchor {
-  color: rgb(27, 106, 255);
+  color: var(--anchor-color);
   text-decoration: underline;
   text-underline-offset: 0.3rem;
 }
