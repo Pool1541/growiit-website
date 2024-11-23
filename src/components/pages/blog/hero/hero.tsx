@@ -20,15 +20,21 @@ function renderTitle(title: string) {
   );
 }
 
-export default function Hero({ title, description, author, date, image, tags, slug,  initialOpacity, className, asSlide = false  }: HeroProps) {
+export default function Hero({ title, description, author, date, images, tags, slug,  initialOpacity, className, asSlide = false  }: HeroProps) {
   const articleLink = `/blog/${slug}`;
   const CustomTag = asSlide ? Link : 'div';
   const CustomHeading = asSlide ? 'h2' : 'h1';
+  const largeImage = images.find(image => image.type === 'large') || images[0];
+  const smallImage = images.find(image => image.type === 'small') || images[0];
 
   return (
     <article className={clsx(styles.hero, className, { [styles['out-of-view']]: initialOpacity, [styles['as-slide']]: !asSlide })}>
       <CustomTag className={styles['hero-image-wrapper']} href={articleLink} >
-        <img className={styles['hero-image']} src={image.src} alt={image.alt} />
+      <picture>
+          <source media="(max-width: 450px)" srcSet={smallImage.src} />
+          <source media="(min-width: 451px)" srcSet={largeImage.src} />
+          <img className={styles['hero-image']} src={largeImage.src} alt={largeImage.alt} fetchPriority='high' />
+        </picture>
       </CustomTag>
       <div className={styles.content}>
         <div className={styles.metadata}>
