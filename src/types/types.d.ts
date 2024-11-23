@@ -1,7 +1,7 @@
 interface BlogArticleInterface {
   title: string;
   description: string;
-  image: BlogArticleImageInterface;
+  images: BlogArticleImageInterface[];
   slug: string;
   author: string;
   date: string;
@@ -9,7 +9,8 @@ interface BlogArticleInterface {
   color: string;
   published: boolean;
   body: string;
-  lastModified?: number
+  lastModified?: number;
+  slug?: string;
   faq?: FaqArticleInteface[];
 }
 
@@ -21,6 +22,7 @@ interface BlogArticleTagInterface {
 interface BlogArticleImageInterface {
   src: string;
   alt: string;
+  type: "thumbnail" | "small" | "large" | "og";
 }
 
 interface FaqArticleInteface {
