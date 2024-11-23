@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     images: {
       url: "https://d1ssfwckvhk5up.cloudfront.net/public/og-image.jpg",
       alt: "Diseño y desarrollo de páginas web a medida | Growiit",
-      type: "image/jpeg",
+      type: "image/webp",
       width: 1200,
       height: 630,
     }
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     images: {
       url: "https://d1ssfwckvhk5up.cloudfront.net/public/og-image.jpg",
       alt: "Diseño y desarrollo de páginas web a medida | Growiit",
-      type: "image/jpeg",
+      type: "image/webp",
       width: 1200,
       height: 630,
     }
