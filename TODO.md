@@ -50,6 +50,8 @@
 
 - [x] Implementar git hooks para la ejecución del linter y hacer build del proyecto antes de hacer push.
 
+- [ ] Corregir el estilo del carousel, los botones de navegación y los dots no se ven bien. Además mejorar la accesibilidad.
+
 ## v1.1
 
 - [ ] Implementar CI/CD para la publicación de artículos.
