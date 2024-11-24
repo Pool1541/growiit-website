@@ -9,12 +9,6 @@
     "lint": "next lint",
     "prepare": "husky"
   },
-  "lint-staged": {
-    "*/**/*.{js,jsx,ts,tsx}": [
-      "prettier --write",
-      "next lint --fix"
-    ]
-  },
   "dependencies": {
     "@next/third-parties": "15.0.1",
     "bright": "^0.8.5",
