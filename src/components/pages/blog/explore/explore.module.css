@@ -1,0 +1,88 @@
+.explore {
+  background-color: var(--white);
+  padding-top: 6rem;
+}
+
+.explore-header {
+  display: flex;
+  gap: 1.1rem;
+  align-items: flex-end;
+
+  & h2 {
+    font-family: var(--font-nunito);
+    font-size: clamp(2.4rem, 5vw, 2.8rem);
+    text-align: left;
+    color: var(--text-h-contrast);
+  }
+
+  & svg {
+    transform: translateY(1rem);
+
+    @media screen and (max-width: 450px) {
+      transform: translateY(1.3rem);
+    }
+  }
+}
+
+.grid-container {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  row-gap: 32px;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.popular {
+  grid-column: 1 / span 8;
+
+  @media screen and (max-width: 992px) {
+    grid-column: 1 / span 7;
+  }
+}
+
+.recent-header {
+  font-family: var(--font-nunito);
+  font-size: 2.8rem;
+  text-align: left;
+  color: var(--text-h-contrast);
+  margin-bottom: 32px;
+}
+
+.recent {
+  grid-column: 9 / span 4;
+
+  @media screen and (max-width: 992px) {
+    grid-column: 8 / span 5;
+  }
+}
+
+.recent-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 3.2rem;
+  
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: row;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  @media screen and (max-width: 450px) {
+    gap: 1.6rem;
+  }
+}

@@ -1,7 +1,9 @@
 import { FacebookIcon, InstagramIcon, WhatsappIcon } from '@/components/icons';
 import { Wrapper } from '../wrapper';
+import { WHATSAPP_NUMBER } from '@/constants';
 import styles from './footer.module.css';
 import Link from 'next/link';
+
 
 export default function Footer() {
   return (
@@ -30,7 +32,7 @@ export default function Footer() {
           <ul>
             <li>
               <Link
-                href='https://api.whatsapp.com/send?phone=51932088984'
+                href={`https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}`}
                 title='Escríbenos en Whatsapp'
                 rel='noopener noreferrer'
                 target='_blank'>

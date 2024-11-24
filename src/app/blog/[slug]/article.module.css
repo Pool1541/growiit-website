@@ -1,0 +1,12 @@
+.article {
+  padding-top: 10rem;
+  background: var(--custom-article-bg-color, #d8ecf7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pb-15 {
+  margin-bottom: 15rem;
+}

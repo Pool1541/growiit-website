@@ -1,71 +1,78 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
-import styles from './aditional-services.module.css'
+import { Wrapper } from '@/components/layout';
+import { Blurry, Title  } from '@/components/ui';
+import styles from './aditional-services.module.css';
 
 const services = [
   {
-    title: 'Diseño web responsivo',
+    title: 'Diseños adaptables para todos los dispositivos:',
     description:
-      'Creamos sitios web que se adaptan a cualquier dispositivo, garantizando una experiencia de usuario fluida en móviles, tabletas y computadoras de escritorio.',
+      'Desarrollamos sitios web que garantizan una experiencia impecable en móviles, tabletas y computadoras. Asegura la mejor navegación para tus usuarios, sin importar el dispositivo.',
     icon: 'https://d1ssfwckvhk5up.cloudfront.net/public/responsive-design.png',
   },
   {
-    title: 'Desarrollo web a medida:',
+    title: 'Desarrollo web personalizado desde cero:',
     description:
-      'Creamos tu sitio web desde cero, utilizando código personalizado para ofrecete una solución única y adaptada a tus necesidades.',
+      'Diseñamos y construimos tu sitio web con código único, sin plantillas ni CMS. Ofrecemos soluciones exclusivas que se adaptan perfectamente a las necesidades de tu negocio.',
     icon: 'https://d1ssfwckvhk5up.cloudfront.net/public/web-development.png',
   },
   {
-    title: 'Optimización para motores de búsqueda (SEO):',
+    title: 'Mejora tu visibilidad con SEO avanzado:',
     description:
-      'Mejoramos la visibilidad de tu sitio web en los motores de búsqueda, aumentando la posibilidad de atraer más visitantes y convertirlos en clientes.',
+      'Potenciamos tu presencia en línea con estrategias de SEO que posicionan tu sitio web en los primeros lugares de búsqueda. Atrae más tráfico y aumenta tus conversiones.',
     icon: 'https://d1ssfwckvhk5up.cloudfront.net/public/search-engine-optimization.png',
   },
   {
-    title: 'Diseño UX/UI:',
+    title: 'Interfaces intuitivas y atractivas:',
     description:
-      'Creamos interfaces intuitivas y atractivas , diseñadas para ofrecer la mejor experiencia de usuario, facilitando la navegación y aumentando la satisfacción de tus visitantes.',
+      'Creamos experiencias visuales y funcionales que cautivan a tus usuarios. Diseñamos interfaces que combinan estética y funcionalidad para una navegación fluida.',
     icon: 'https://d1ssfwckvhk5up.cloudfront.net/public/ux-ui.png',
   },
   {
-    title: 'Hosting rápido y seguro:',
+    title: 'Hosting de alta velocidad y máxima seguridad:',
     description:
-      'Ofrecemos servicios de hosting de alta calidad, garantizando la disponibilidad, velocidad y seguridad de tu sitio web, además de un soporte técnico especializado.',
+      'Proporcionamos hosting confiable que garantiza disponibilidad constante, tiempos de carga óptimos y seguridad avanzada. Incluye soporte técnico especializado.',
     icon: 'https://d1ssfwckvhk5up.cloudfront.net/public/hosting-server.png',
   },
   {
-    title: 'Analítica web:',
+    title: 'Datos que impulsan decisiones inteligentes:',
     description:
-      'Monitorea el comportamiento de los usuarios y el rendimiento de tu sitio web con la integración de herramientas de analítica web, como Google Analytics.',
+      'Integramos herramientas como Google Analytics para analizar el comportamiento de tus usuarios y optimizar el rendimiento de tu sitio web con información detallada.',
     icon: 'https://d1ssfwckvhk5up.cloudfront.net/public/web-analytics.png',
   },
 ];
 
 export default function AditionalServices() {
   return (
-    <div className={styles['aditional-services']}>
-      <h2>Nuestros servicios</h2>
-      <p>
-        Ofrecemos soluciones integrales que transforman tu presencia en línea y potencian la
-        interacción con tus usuarios. Nuestro enfoque se basa en la personalización, la calidad y la
-        innovación, asegurando que cada proyecto se adapte a las necesidades específicas de tu
-        negocio.
-      </p>
-      <ul>
-        {services.map((service, index) => (
-          <li key={index}>
-            {React.isValidElement(service.icon) ? (
-              service.icon
-            ) : (
-              <img src={service.icon} alt={service.title} loading='lazy' />
-            )}
-            <p>
-              <span>{service.title}</span>
-              {service.description}
-            </p>
-          </li>
-        ))}
-      </ul>
-    </div>
-  )
+    <section id='aditional-services' className='landing-section' data-header-color='black'>
+      <Wrapper style={{ position: 'relative'}}>
+        <div className={styles['aditional-services']}>
+          <Title as='h2'>Soluciones digitales personalizadas para tu negocio</Title>
+          <p>
+            Descubre nuestros servicios diseñados para transformar tu presencia en línea. Desde
+            páginas web a medida y SEO hasta diseño UX/UI y hosting seguro, ofrecemos soluciones
+            integrales que combinan creatividad, escalabilidad y tecnología de vanguardia para que
+            tu negocio alcance nuevas alturas.
+          </p>
+          <ul>
+            {services.map((service, index) => (
+              <li key={index}>
+                {React.isValidElement(service.icon) ? (
+                  service.icon
+                ) : (
+                  <img src={service.icon} alt={service.title} loading='lazy' />
+                )}
+                <p>
+                  <span>{service.title}</span>
+                  {service.description}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <Blurry bottom />
+      </Wrapper>
+    </section>
+  );
 }

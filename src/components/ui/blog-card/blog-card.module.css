@@ -1,0 +1,112 @@
+.card {
+  max-width: 40rem;
+  min-width: 27rem;
+  flex: 1 1 30rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.6rem 1.2rem;
+  border-radius: 1.2rem;
+  gap: 1rem;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.09);
+  scroll-snap-align: start;
+  background-color: var(--white);
+
+  @media screen and (max-width: 1200px) {
+    flex: 0 0 85%;
+    max-width: 32rem;
+    min-width: 28rem;
+  }
+
+  & h3 {
+    color: var(--slate-800, #1e293b);
+    font-size: clamp(1.6rem, 2vw, 1.8rem);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.25;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+  }
+
+  & p {
+    color: var(--slate-600, #475569);
+    font-size: var(--paragraph-responsive);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    line-clamp: 4;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+  }
+}
+
+.card-image {
+  display: flex;
+  height: 150px;
+  padding: 12px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  height: 150px;
+  background: lightgray 50% / cover no-repeat;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.card-metadata {
+  display: flex;
+  padding-top: 12px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.cta-card-button {
+  display: flex;
+  padding-top: 12px;
+  flex-direction: column;
+  align-items: flex-end;
+  align-self: stretch;
+  flex: 1 1 auto;
+  justify-content: flex-end;
+
+  & a {
+    display: flex;
+    padding: 8px 12px 8px 20px;
+    align-items: flex-start;
+    gap: 6px;
+    border-radius: 6px;
+    background: #873bf6;
+
+    & span {
+      color: #fff;
+      font-size: var(--paragraph-responsive);
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px;
+    }
+
+    & svg {
+      position: relative;
+      top: 3px;
+      transition: transform ease 0.2s;
+
+      @media screen and (max-width: 450px) {
+        top: 4px;
+        height: 8px;
+      }
+    }
+  }
+
+  &:hover a svg {
+    transform: translateX(4px);
+    will-change: transform;
+  }
+}

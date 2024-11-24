@@ -3,6 +3,10 @@ import { PolicyLayout } from '@/components/layout/policy-layout';
 
 export const metadata: Metadata = {
   title: 'Política de privacidad',
+  description: 'Política de privacidad de Growiit',
+  alternates: {
+    canonical: 'https://growiit.com/politica-de-privacidad',
+  }
 };
 
 export default function Page() {
@@ -59,23 +63,23 @@ export default function Page() {
         <p>
           La información que recopilamos a través de nuestro formulario de contacto será utilizada
           únicamente para los siguientes fines:
-          <ul>
-            <li>Responder a las solicitudes y consultas enviadas a través del formulario.</li>
-            <li>
-              Mantener una comunicación con los clientes o usuarios que hayan solicitado
-              información.
-            </li>
-            <li>
-              Mejorar la experiencia de usuario en nuestro sitio web mediante el análisis de los
-              datos de interacción y comportamiento (mediante Google Analytics 4).
-            </li>
-            <li>
-              No compartimos ni vendemos la información personal de los usuarios a terceros, excepto
-              cuando sea necesario para la prestación de servicios (como el uso de Google reCAPTCHA
-              y Google Analytics) o cuando sea requerido por ley.
-            </li>
-          </ul>
         </p>
+        <ul>
+          <li>Responder a las solicitudes y consultas enviadas a través del formulario.</li>
+          <li>
+            Mantener una comunicación con los clientes o usuarios que hayan solicitado
+            información.
+          </li>
+          <li>
+            Mejorar la experiencia de usuario en nuestro sitio web mediante el análisis de los
+            datos de interacción y comportamiento (mediante Google Analytics 4).
+          </li>
+          <li>
+            No compartimos ni vendemos la información personal de los usuarios a terceros, excepto
+            cuando sea necesario para la prestación de servicios (como el uso de Google reCAPTCHA
+            y Google Analytics) o cuando sea requerido por ley.
+          </li>
+        </ul>
       </article>
       <article>
         <h2>3. Protección de la Información</h2>
@@ -96,28 +100,30 @@ export default function Page() {
         <p>
           De acuerdo con las leyes de protección de datos aplicables, los usuarios tienen los
           siguientes derechos respecto a sus datos personales:
-          <ul>
-            <li>
-              <b>Acceso:</b> Los usuarios tienen derecho a solicitar una copia de los datos
-              personales que hemos recopilado.
-            </li>
-            <li>
-              <b>Rectificación:</b> Los usuarios pueden solicitar la corrección de cualquier dato
-              incorrecto o incompleto.
-            </li>
-            <li>
-              <b>Eliminación:</b> Los usuarios pueden solicitar la eliminación de sus datos
-              personales, salvo en los casos en los que la ley nos obligue a conservarlos.
-            </li>
-            <li>
-              <b>Restricción del tratamiento:</b> Los usuarios pueden solicitar que se limiten
-              ciertos usos de sus datos personales.
-            </li>
-            <li>
-              <b>Portabilidad de datos:</b> En ciertas circunstancias, los usuarios pueden solicitar
-              que sus datos sean transferidos a otro proveedor de servicios.
-            </li>
-          </ul>
+        </p>
+        <ul>
+          <li>
+            <b>Acceso:</b> Los usuarios tienen derecho a solicitar una copia de los datos
+            personales que hemos recopilado.
+          </li>
+          <li>
+            <b>Rectificación:</b> Los usuarios pueden solicitar la corrección de cualquier dato
+            incorrecto o incompleto.
+          </li>
+          <li>
+            <b>Eliminación:</b> Los usuarios pueden solicitar la eliminación de sus datos
+            personales, salvo en los casos en los que la ley nos obligue a conservarlos.
+          </li>
+          <li>
+            <b>Restricción del tratamiento:</b> Los usuarios pueden solicitar que se limiten
+            ciertos usos de sus datos personales.
+          </li>
+          <li>
+            <b>Portabilidad de datos:</b> En ciertas circunstancias, los usuarios pueden solicitar
+            que sus datos sean transferidos a otro proveedor de servicios.
+          </li>
+        </ul>
+        <p>
           Para ejercer estos derechos, los usuarios pueden ponerse en contacto con nosotros a través
           de la información proporcionada en esta política.
         </p>

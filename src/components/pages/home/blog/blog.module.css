@@ -1,0 +1,51 @@
+.blog {
+  margin: 0;
+  padding: 10rem 0 5rem 0;
+  background: var(--white);
+  color: var(--text-contrast);
+
+  @media screen and (max-width: 450px) {
+    padding: 5rem 0;
+  }
+}
+
+.blog-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  & p {
+    width: 100%;
+    max-width: 850px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    text-wrap: balance;
+    font-size: var(--paragraph-responsive);
+    
+    @media screen and (max-width: 450px) {
+      text-align: left;
+      text-wrap: wrap;
+    }
+  }
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  padding: 1.2rem 0;
+
+  
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media screen and (max-width: 1200px) {
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+}

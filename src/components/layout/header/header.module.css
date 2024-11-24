@@ -4,7 +4,9 @@
   width: 100%;
   z-index: 100;
   transition: height 0.3s linear, transform 0.3s linear;
-  fill: #ffffff;
+  fill: var(--text-color, #ffffff);
+  color: var(--text-color, #ffffff);
+  background-color: var(--bg-color, transparent);
 
   &.scrolled {
     height: 8rem;
@@ -13,7 +15,7 @@
   }
 
   &.notScrolled {
-    height: 15rem;
+    height: var(--header-height, 15rem);
     border-bottom: none;
     backdrop-filter: blur(0);
   }
@@ -35,18 +37,22 @@
   align-items: center;
   justify-content: center;
   
-  & > svg {
+  & svg {
     width: 15rem;
 
     @media screen and (max-width: 450px) {
-      width: 10rem;
+      width: 12rem;
     }
+  }
+
+  & path {
+    transition: fill 0.1s linear;
   }
 }
 
 .headerNav {
-  flex: 1 1 auto;
-  max-width: 500px;
+  flex: 0 0 auto;
+
 
   @media screen and (max-width: 768px) {
     max-width: 500px;
@@ -58,7 +64,7 @@
     top: 0;
     right: 0;
     height: 110vh;
-    background-color: var(--secondary);
+    background-color: var(--navbar-custom-bg, #9b5bf8);
     color: var(--white);
     transform: translateX(100%);
     transition: transform 0.3s ease;
@@ -106,8 +112,12 @@
   & ul {
     display: flex;
     justify-content: space-between;
-    gap: 2rem;
+    gap: clamp(1.2rem, 1.5vw, 2rem);
     flex: 1 1 auto;
+
+    @media screen and (max-width: 768px) {
+      gap: 3rem;
+    }
 
     & a {
       position: relative;
@@ -127,7 +137,7 @@
       left: 0;
       width: 0;
       height: 2px;
-      background-color: var(--accent);
+      background-color: var(--custom-color, var(--accent));
       transition: all 0.2s linear;
     }
 

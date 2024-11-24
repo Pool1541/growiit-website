@@ -1,0 +1,1 @@
+export { default as RecentCard } from './recent-card';

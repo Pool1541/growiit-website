@@ -1,0 +1,1 @@
+export { default as RecommendedArticles } from './recommended-articles';
