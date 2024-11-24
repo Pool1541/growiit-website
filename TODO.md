@@ -32,11 +32,9 @@
 
 - [x] Crear las funciones necesarias para obtener los artículos desde las diferentes vistas. (últimos publicados, más populares y recomendaciones)
 
-- [ ] Crear la función para suscribirse al newsletter.
+- [x] Crear la función para suscribirse al newsletter.
 
-- [ ] Completar el diseño del formulario para suscribirse al newsletter.
-
-- [ ] Implementar git hooks para la ejecución del linter y hacer build del proyecto antes de hacer push.
+- [x] Completar el diseño del formulario para suscribirse al newsletter.
 
 - [x] Cambiar la imagen del hero por una más representativa.
 
@@ -44,6 +42,13 @@
 
 - [x] Modificar los esquemas json+ld de blog para incluir solo los artículos populares.
 
+- [x] Cambiar el número de telefono.
+
+- [x] Implementar el feedback para el formulario de contacto.
+
+- [x] Crear un archivo de configuración para los datos de la página, como el número de whatsapp.
+
+- [x] Implementar git hooks para la ejecución del linter y hacer build del proyecto antes de hacer push.
 
 ## v1.1
 
