@@ -92,8 +92,14 @@
     gap: 4px;
     flex: 1 0 0;
     border-radius: 6px;
-    background: var(--slate-400, #94A3B8);
+    background: var(--primary);
     white-space: nowrap;
+    transition: background 0.2s ease;
+
+    &:disabled {
+      background: var(--slate-400, #94A3B8);
+      cursor: not-allowed;
+    }
 
     & span {
       color: var(--white, #FFF);
@@ -123,9 +129,10 @@
     background: var(--white, #FFF);
     box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.15);
     position: relative;
+    transition: background 0.2s ease;
 
     &:checked {
-      background: var(--slate-400, #94A3B8);
+      background: var(--primary);
     }
 
     &::after {
@@ -146,9 +153,69 @@
 
   & label {
     color: var(--slate-600, #475569);
-    font-size: 14px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: 18px;
   }
+}
+
+.error {
+  color: var(--error);
+  font-size: 15px;
+  line-height: 0.5;
+}
+
+.hidden {
+  display: none;
+}
+
+.success {
+  grid-column: 9 / span 4;
+  flex: 1 1 510px;
+  align-self: stretch;
+  color: var(--slate-800);
+
+  @media screen and (max-width: 768px) {
+    grid-column: 1;
+  }
+
+  & h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  & p {
+    color: var(--slate-600);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-top: 1.2rem;
+  }
+}
+
+.error {
+  grid-column: 9 / span 4;
+  flex: 1 1 510px;
+  align-self: stretch;
+  color: var(--error);
+
+  @media screen and (max-width: 768px) {
+    grid-column: 1;
+  }
+
+  & h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  & p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-top: 1.2rem;
+  }
+
 }
