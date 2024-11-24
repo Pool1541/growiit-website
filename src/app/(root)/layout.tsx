@@ -1,4 +1,3 @@
-import Script from 'next/script';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { getTopViewedPosts } from '@/lib/get-posts';
@@ -104,7 +103,7 @@ export default function Layout({
           __html: JSON.stringify(organizationJsonLd),
         }}
       />
-      <Script
+      <script
         id='posts-schema'
         type='application/ld+json'
         dangerouslySetInnerHTML={{
