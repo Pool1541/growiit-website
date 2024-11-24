@@ -9,6 +9,7 @@ import { InputGroup, Title } from '@/components/ui';
 import { MailBoxIcon } from '@/components/icons';
 import { useStatus } from '@/hooks';
 import { validationSchema } from '@/lib';
+import { WHATSAPP_NUMBER } from '@/constants';
 import type { handleSubmit } from '@/types';
 import styles from './contact.module.css';
 
@@ -56,7 +57,7 @@ export default function Contact() {
             <p>
               Hemos recibido tu mensaje y nuestro equipo se pondrá en contacto contigo en un plazo máximo de 24 horas.
               Mientras tanto, si tienes alguna duda urgente, no dudes en escribirnos a nuestro <Link
-                href='https://api.whatsapp.com/send?phone=51932088984'
+                href={`https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}`}
                 title='Escríbenos en Whatsapp'
                 rel='noopener noreferrer'
                 target='_blank'>
@@ -126,7 +127,7 @@ export default function Contact() {
                   <div className={clsx(styles.error, {[styles.hidden]: status !== "error"})}>
                     <p>¡Ups! Ocurrió un error</p>
                     <span>Nuestro equipo ya está al tanto del error y lo solucionarán en breve. Por favor, inténtalo nuevamente más tarde o escribirnos a nuestro <Link
-                    href='https://api.whatsapp.com/send?phone=51932088984'
+                    href={`https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}`}
                     title='Escríbenos en Whatsapp'
                     rel='noopener noreferrer'
                     target='_blank'>
