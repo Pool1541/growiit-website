@@ -1,7 +1,3 @@
-# .husky/pre-push
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
-
 echo "Building the application..."
 npm run build
 
