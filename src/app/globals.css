@@ -1,16 +1,19 @@
 :root {
+  --custom-article-bg-color: #D8ECF7;
+  --custom-article-dark-color: #247dae;
   --primary : #873bf6;
   --secondary: #9b5bf8;
   --error: #D20F46;
   --primary-accent: #fc6a6a;
   --primary-accent-hover: #ed696c;
+  --anchor-color: #1b6aff;
   --success: #96ff6c;
   --background : #A7B0C1;
   --border-card: #76767645;
   --white: #FFFFFF;
   --text: #FFFFFF;
   --text-hover: #E4E4E4;
-  --text-contrast: #4b5563;
+  --text-contrast: #3f4753;
   --text-contrast-transparent: #9ca3af; 
   --text-h-contrast: #111827;
   --accent: #ca78ff;
@@ -20,6 +23,16 @@
   --shadow-button: 5px 5px 7px 2px rgba(0, 0, 0, 0.13);
   --primary-transparent: #873bf650;
   --secondary-transparent: #9a5bf88e;
+
+  --slate-800: #1E293B;
+  --slate-600: #475569;
+  --slate-700: #334155;
+  --slate-600: #475569;
+  --slate-500: #64748B;
+  --slate-400: #94A3B8;
+  --slate-300: #CBD5E1;
+  --slate-100: #F1F5F9;
+
 
   /* FONT SIZE */
   --paragraph-size: 1.6rem;

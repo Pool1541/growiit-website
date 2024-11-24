@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { CheckIcon } from '@/components/icons';
 import styles from './service-card.module.css';
 
@@ -36,9 +37,9 @@ export default function ServiceCard({ service, important }: Props = defaultProps
       <div className={styles.price}>
         <p>${price}</p> <span>USD</span>
       </div>
-      <a href='#contact' title='Recibe más información sobre este plan'>
+      <Link href='#contact' title='Recibe más información sobre este plan'>
         <span>Más información</span>
-      </a>
+      </Link>
       <ul>
         {features.map((feature, index) => (
           <li key={index}>

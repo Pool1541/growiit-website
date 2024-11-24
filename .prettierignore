@@ -1,0 +1,12 @@
+.next
+.husky
+node_modules
+posts
+.env.local
+.env
+.gitignore
+next-env.d.ts
+next.config.mjs
+package.json
+package-lock.json
+tsconfig.json

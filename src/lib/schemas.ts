@@ -22,3 +22,13 @@ export const validationSchema = Yup.object({
     .lowercase(),
   'g-recaptcha-response': Yup.string().required('Por favor, complete el captcha'),
 });
+
+export const newsletterSchema = Yup.object({
+  email: Yup.string()
+    .required('Por favor ingrese su email')
+    .max(50, 'Máximo 50 caracteres')
+    .trim()
+    .lowercase()
+    .email('Debe ser un email válido'),
+  terms: Yup.boolean().oneOf([true], 'Debe aceptar los términos y condiciones'),
+});

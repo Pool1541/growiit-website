@@ -3,6 +3,10 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Términos y condiciones',
+  description: 'Términos y condiciones de servicio de Growiit',
+  alternates: {
+    canonical: 'https://growiit.com/terminos-y-condiciones',
+  }
 };
 
 export default function Page() {
@@ -113,15 +117,16 @@ export default function Page() {
           incumplimiento de estos Términos y Condiciones por parte del cliente, incluyendo pero no
           limitándose a:
         </p>
-        <ul></ul>
-        <li>Falta de pago.</li>
-        <li>Suministro de información incorrecta o fraudulenta.</li>
-        <li>Uso indebido o ilegal del sitio web desarrollado.</li>
-        <li>
-          En caso de suspensión o terminación del servicio, Growiit notificará al cliente con
-          antelación y proporcionará instrucciones para corregir el incumplimiento cuando sea
-          aplicable.
-        </li>
+        <ul>
+          <li>Falta de pago.</li>
+          <li>Suministro de información incorrecta o fraudulenta.</li>
+          <li>Uso indebido o ilegal del sitio web desarrollado.</li>
+          <li>
+            En caso de suspensión o terminación del servicio, Growiit notificará al cliente con
+            antelación y proporcionará instrucciones para corregir el incumplimiento cuando sea
+            aplicable.
+          </li>
+        </ul>
       </article>
       <article>
         <h2>10. Ley Aplicable y Jurisdicción</h2>

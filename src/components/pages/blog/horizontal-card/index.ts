@@ -1,0 +1,1 @@
+export { default as HorizontalCard } from './horizontal-card'

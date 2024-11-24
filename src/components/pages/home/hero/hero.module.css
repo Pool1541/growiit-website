@@ -9,6 +9,7 @@
 
 .hero-container {
   height: 100dvh;
+  min-height: 90rem;
   padding-top: min(10%, 100px);
   max-height: 100rem;
   display: flex;
@@ -26,6 +27,16 @@
       align-self: flex-start;
     }
 
+    @media screen and (max-width: 992px) {
+      width: 95%;
+      align-items: center;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 80%;
+      align-items: center;
+    }
+
     @media screen and (max-width: 450px) {
       width: 100%;
       margin: auto;
@@ -36,32 +47,13 @@
       }
     }
 
-    & h1 {
-      font-size: clamp(3.5rem, 5vw, 6rem);
-      line-height: 1.2;
-      font-weight: 600;
-      color: var(--white);
-      margin-bottom: 1.6rem;
-    }
-
-    & h2 {
-      color: var(--accent);
-      text-align: left;
-      font-size: clamp(2.5rem, 5vw, 4rem);
-      font-weight: 300;
-      margin-bottom: 5rem;
-
-      @media screen and (max-width: 450px) {
-        text-align: center;
-      }
-    }
-
     & p {
-      font-size: clamp(2rem, 5vw, 2.2rem);
+      font-size: clamp(1.8rem, 2.5vw, 2.2rem);
       line-height: 1.2;
       font-weight: 300;
       margin-bottom: 5rem;
       text-align: left;
+      text-wrap: pretty;
     }
 
     & button {
@@ -93,8 +85,8 @@
       }
 
       & > span {
-        font-weight: 500;
-        font-size: clamp(1.8rem, 4vw, 2.2rem);
+        font-weight: 600;
+        font-size: clamp(1.8rem, 4vw, 2rem);
       }
     }
   }
@@ -102,7 +94,7 @@
 
 .hero-right {
   position: relative;
-  width: 80%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -113,24 +105,24 @@
 
   & > div {
     position: relative;
-    width: 80%;
-    height: 80%;
-    min-width: 550px;
-    border-radius: 50px 50px 30% 50px;
+    width: 100%;
+    height: 65%;
+    min-width: 450px;
+    border-radius: 36px;
     max-height: 550px;
     -webkit-box-shadow: var(--shadow-dark);
     -moz-box-shadow: var(--shadow-dark);
     box-shadow: var(--shadow-dark);
 
     @media screen and (max-width: 992px) {
-      min-width: 400px;
-      max-height: 500px;
+      min-width: 380px;
+      max-height: 380px;
     }
 
     & img {
       width: 100%;
       height: 100%;
-      border-radius: 50px 50px 30% 50px;
+      border-radius: 36px;
       object-fit: cover;
     }
   }

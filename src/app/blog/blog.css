@@ -1,0 +1,17 @@
+.blog {
+  padding-top: 10rem;
+  background: var(--custom-article-bg-color, #d8ecf7);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+}

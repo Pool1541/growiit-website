@@ -1,5 +1,5 @@
 .blurry {
-  width: 100%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,9 +10,13 @@
   filter: blur(75px);
   top: 0;
 
+  @media screen and (max-width: 450px) {
+    display: none;
+  }
+
   &.bottom {
     top: auto;
-    bottom: 0;
+    bottom: 100px;
   }
 
   & div {
