@@ -1,4 +1,3 @@
-import Script from 'next/script';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { getTopViewedPosts } from '@/lib/get-posts';
@@ -9,7 +8,7 @@ const headerVariables: HeaderVariables = {
   '--text-color': '#ffffff',
   '--custom-color': '#ed696c',
   '--header-height': '15rem',
-  '--navbar-custom-bg': '#9b5bf8'
+  '--navbar-custom-bg': '#9b5bf8',
 };
 
 const posts = await getTopViewedPosts();
@@ -40,8 +39,8 @@ const organizationJsonLd: WithContext<Organization> = {
           name: 'Diseño de páginas web',
           description:
             'Creamos tu sitio web desde cero, utilizando código personalizado para ofrecerte una solución única y adaptada a tus necesidades.',
-        }
-      }, 
+        },
+      },
       {
         '@type': 'Offer',
         itemOffered: {
@@ -49,7 +48,7 @@ const organizationJsonLd: WithContext<Organization> = {
           name: 'SEO',
           description:
             'Mejoramos la visibilidad de tu sitio web en los motores de búsqueda, aumentando la posibilidad de atraer más visitantes y convertirlos en clientes.',
-        }
+        },
       },
       {
         '@type': 'Offer',
@@ -58,7 +57,7 @@ const organizationJsonLd: WithContext<Organization> = {
           name: 'Diseño UX/UI',
           description:
             'Creamos interfaces intuitivas y atractivas, diseñadas para ofrecer la mejor experiencia de usuario, facilitando la navegación y aumentando la satisfacción de tus visitantes.',
-        }
+        },
       },
       {
         '@type': 'Offer',
@@ -67,28 +66,28 @@ const organizationJsonLd: WithContext<Organization> = {
           name: 'Analítica Web',
           description:
             'Monitorea el comportamiento de los usuarios y el rendimiento de tu sitio web con la integración de herramientas de analítica web, como Google Analytics.',
-        }
-      }
-    ]
-  }
+        },
+      },
+    ],
+  },
 };
 
 const postsJsonLd: WithContext<ItemList> = {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": "Últimos artículos del blog",
-  "itemListElement": posts.map((post, index) => ({
-   "@type": "ListItem",
-      "position": index + 1,
-      "item": {
-        "@type": "BlogPosting",
-        "headline": post.title,
-        "description": post.description,
-        "url": `https://growiit.com/blog/${post.slug}`,
-        "datePublished": new Date(post.date).toISOString().split('T')[0],
-      }
-  }))
-}
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Últimos artículos del blog',
+  itemListElement: posts.map((post, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    item: {
+      '@type': 'BlogPosting',
+      headline: post.title,
+      description: post.description,
+      url: `https://growiit.com/blog/${post.slug}`,
+      datePublished: new Date(post.date).toISOString().split('T')[0],
+    },
+  })),
+};
 
 export default function Layout({
   children,
@@ -97,14 +96,14 @@ export default function Layout({
 }>) {
   return (
     <>
-      <Script
+      <script
         id='organization-schema'
         type='application/ld+json'
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(organizationJsonLd),
         }}
       />
-      <Script
+      <script
         id='posts-schema'
         type='application/ld+json'
         dangerouslySetInnerHTML={{
