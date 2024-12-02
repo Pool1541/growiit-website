@@ -50,13 +50,15 @@
 
 - [x] Implementar git hooks para la ejecución del linter y hacer build del proyecto antes de hacer push.
 
+- [x] Corregir el estilo del carousel, los botones de navegación y los dots no se ven bien. Además mejorar la accesibilidad.
+
 ## v1.1
 
 - [ ] Implementar CI/CD para la publicación de artículos.
 
 - [ ] Componetizar las secciones ya que hay algunos elementos que se repiten, como el título y descripción de las secciones, también el contenedor de secciones.
 
-- [ ] Implementar funcionalidad que permita identificar los artículos más populares por visitas.
+- [⏳] Implementar funcionalidad que permita identificar los artículos más populares por visitas.
 
 - [ ] Mejorar las funciones que obtienen los artículos en las diferentes vistas (últimos publicados, más populares y recomendaciones). Se deben reimplementar con la información obtenida desde la base de datos para filtrar correctamente los artículos con más visitas, los últimos publicados y las recomendaciones.
 
@@ -64,7 +66,7 @@
 
 - [ ] Mejorar la accesibilidad de la página.
 
-- [ ] Bloquear la incrustación por iframe de la web. ```Sec-Fetch-Site: same-origin```
+- [⏳] Bloquear la incrustación por iframe de la web. ```Sec-Fetch-Site: same-origin```
 [Documentación](https://nextjs.org/docs/app/building-your-application/configuring/content-security-policy)
   
   ```javascript
