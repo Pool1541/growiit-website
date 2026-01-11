@@ -17,7 +17,7 @@
     "embla-carousel-react": "^8.3.0",
     "formik": "^2.4.6",
     "gray-matter": "^4.0.3",
-    "next": "^15.0.2-canary.8",
+    "next": "15.6.0-canary.60",
     "next-mdx-remote": "^5.0.0",
     "react": "^19.0.0-rc-cae764ce-20241025",
     "react-dom": "^19.0.0-rc-cae764ce-20241025",
